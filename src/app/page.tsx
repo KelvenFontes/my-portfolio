@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";  // ✅ Botão "Voltar ao Topo"
 import Stats from "@/components/Stats";
 import PaymentsExperience from "../components/PaymentsExperience"; // ✅ Importando a seção
-
+import TechCarousel from "../components/TechCarousel"; // ✅ Importando o carrossel
 
 export default function Home() {
   return (
@@ -65,6 +65,10 @@ export default function Home() {
       {/* ✅ NOVAS SEÇÕES ADICIONADAS SEM REMOVER NADA */}
       <motion.section id="services" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <Services />
+      </motion.section>
+
+      <motion.section id="technologies" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <TechCarousel />
       </motion.section>
 
       <motion.section id="payments" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
