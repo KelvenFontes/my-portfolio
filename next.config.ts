@@ -2,7 +2,8 @@
 const nextConfig = {
   output: "export",
   distDir: "docs",
-  // basePath: "/SEU_REPOSITORIO",
+  basePath: "/my-portfolio",
+  assertsPrefix: "/my-portfolio",
   images: {
     unoptimized: true,
   },
