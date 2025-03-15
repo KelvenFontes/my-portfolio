@@ -37,10 +37,10 @@ const services: Service[] = [
 export default function Services() {
   return (
     <ParallaxWrapper>
-      <section className="py-20 text-center relative z-0 bg-gray-900">
+      <section className="py-20 text-center relative z-0">
         <Parallax speed={-3} className="relative z-10">
           <motion.h2
-            className="text-5xl font-bold mb-12 text-gray-100"
+            className="text-5xl font-bold mb-12"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
