@@ -7,7 +7,7 @@ export default function TechCarousel() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 2000, // 🔥 Movimento mais suave
+        speed: 2000,
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
@@ -20,8 +20,8 @@ export default function TechCarousel() {
         responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 5 } },
             { breakpoint: 768, settings: { slidesToShow: 4 } },
-            { breakpoint: 640, settings: { slidesToShow: 3 } }, // 🔥 Melhor ajuste para telas médias
-            { breakpoint: 480, settings: { slidesToShow: 2 } }, // 🔥 Agora exibe 2 ícones no mobile
+            { breakpoint: 640, settings: { slidesToShow: 3 } },
+            { breakpoint: 480, settings: { slidesToShow: 2 } },
         ],
     };
 
