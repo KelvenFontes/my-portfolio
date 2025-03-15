@@ -5,23 +5,23 @@ import Navbar from "../components/Navbar";
 import TypingEffect from "../components/TypingEffect";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Services from "../components/Services";  // ✅ Nova seção de Serviços
+import Services from "../components/Services";
 import Projects from "../components/Projects";
-import Testimonials from "../components/Testimonials";  // ✅ Mantida
-import Blog from "../components/Blog";  // ✅ Nova seção de Blog
+import Testimonials from "../components/Testimonials";
+import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import ScrollToTop from "../components/ScrollToTop";  // ✅ Botão "Voltar ao Topo"
+import ScrollToTop from "../components/ScrollToTop";
 import Stats from "@/components/Stats";
-import PaymentsExperience from "../components/PaymentsExperience"; // ✅ Importando a seção
-import TechCarousel from "../components/TechCarousel"; // ✅ Importando o carrossel
+import PaymentsExperience from "../components/PaymentsExperience";
+import TechCarousel from "../components/TechCarousel";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <div className="bg-gray-900 text-gray-100 min-h-screen flex flex-col items-center">
       <Navbar />
 
-      {/* ✅ HERO SECTION - Mantendo tudo exatamente como estava */}
       <section id="hero" className="w-full flex flex-col items-center justify-center min-h-screen text-center px-6 md:px-12 pt-24">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -44,7 +44,6 @@ export default function Home() {
             <TypingEffect />
           </p>
 
-          {/* ✅ Mantendo os botões intactos */}
           <div className="flex flex-wrap gap-4 mt-6 justify-center">
             <a className="bg-blue-600 hover:bg-blue-700 text-white text-lg font-semibold px-6 py-3 rounded-lg transition-all" href="https://linkedin.com/in/seuusuario" target="_blank">🔗 LinkedIn</a>
             <a className="bg-gray-800 hover:bg-gray-700 text-white text-lg font-semibold px-6 py-3 rounded-lg transition-all" href="https://github.com/seuusuario" target="_blank">🖥️ GitHub</a>
@@ -53,7 +52,12 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* ✅ SEÇÕES EXISTENTES MANTIDAS */}
+
+
+      <motion.section id="about" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
+        <Hero />
+      </motion.section>
+
       <motion.section id="about" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
         <About />
       </motion.section>
@@ -62,7 +66,6 @@ export default function Home() {
         <Skills />
       </motion.section>
 
-      {/* ✅ NOVAS SEÇÕES ADICIONADAS SEM REMOVER NADA */}
       <motion.section id="services" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <Services />
       </motion.section>
