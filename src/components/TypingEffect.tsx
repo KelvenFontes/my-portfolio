@@ -1,31 +1,46 @@
 "use client";
-import { useState, useEffect } from "react";
-
-const texts = ["Desenvolvedor Frontend", "Criador de Interfaces", "Apaixonado por UX/UI"];
+import { useState, useEffect, useMemo } from "react";
 
 export default function TypingEffect() {
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [reverse, setReverse] = useState(false);
+  const texts = useMemo(
+    () => [
+      "Desenvolvedor FullStack",
+      "Especialista Front-end",
+    ],
+    []
+  );
+
+  const [textIndex, setTextIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    if (subIndex === texts[index].length + 1 && !reverse) {
-      setTimeout(() => setReverse(true), 1000);
+    const currentText = texts[textIndex];
+
+    if (!isDeleting && charIndex === currentText.length) {
+      setTimeout(() => setIsDeleting(true), 1200);
       return;
     }
 
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-      setIndex((prev) => (prev + 1) % texts.length);
+    if (isDeleting && charIndex === 0) {
+      setIsDeleting(false);
+      setTextIndex((prev) => (prev + 1) % texts.length);
       return;
     }
 
+    const typingSpeed = isDeleting ? 50 : 80;
     const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, reverse ? 50 : 100);
+      setCharIndex((prev) => prev + (isDeleting ? -1 : 1));
+    }, typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [subIndex, reverse, index]);
+  }, [charIndex, isDeleting, textIndex, texts]);
 
-  return <span className="text-blue-400">{texts[index].substring(0, subIndex)}</span>;
+  return (
+    <span
+      className="text-blue-400 inline-block"
+    >
+      {texts[textIndex].substring(0, charIndex)}
+    </span>
+  );
 }
