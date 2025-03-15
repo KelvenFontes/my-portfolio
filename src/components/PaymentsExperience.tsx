@@ -10,7 +10,7 @@ export default function PaymentsExperience() {
     <section className="w-full max-w-5xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center relative overflow-hidden">
       {/* Animação de entrada do título */}
       <motion.h2
-        className="text-4xl font-bold text-white mb-6"
+        className="text-4xl font-bold mb-6"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
