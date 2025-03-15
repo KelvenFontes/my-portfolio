@@ -40,7 +40,7 @@ export default function HeroSection() {
   }, [charIndex, isDeleting, textIndex, texts]);
 
   return (
-    <div className="flex flex-col items-center justify-center text-center text-white px-4 sm:py-10 mt-20 md:mt-16">
+    <div className="flex flex-col items-center justify-center text-center px-4 sm:py-10 mt-20 md:mt-16">
       {/* Foto de Perfil */}
       <div className="w-24 h-24 bg-gray-700 rounded-full mb-4 sm:w-32 sm:h-32"></div>
 
