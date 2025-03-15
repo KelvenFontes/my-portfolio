@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
-import Skills from "../components/Skills";
 import Services from "../components/Services";
 import Projects from "../components/Projects";
 import Testimonials from "../components/Testimonials";
@@ -27,10 +26,6 @@ export default function Home() {
 
       <motion.section id="about" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
         <About />
-      </motion.section>
-
-      <motion.section id="skills" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-        <Skills />
       </motion.section>
 
       <motion.section id="services" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
