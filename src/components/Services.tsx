@@ -3,15 +3,14 @@ import { motion } from "framer-motion";
 import { FaCode, FaMobileAlt, FaPaintBrush } from "react-icons/fa";
 import Tilt from "react-parallax-tilt";
 import { Parallax } from "react-scroll-parallax";
-import ParallaxWrapper from "@/components/ParallaxWrapper"; // Importando o wrapper
+import ParallaxWrapper from "@/components/ParallaxWrapper";
 import { JSX } from "react";
 
-// Tipagem dos serviços
 interface Service {
   title: string;
   description: string;
   icon: JSX.Element;
-  borderColor: string; // Cor da borda sutil
+  borderColor: string;
 }
 
 const services: Service[] = [
@@ -39,7 +38,6 @@ export default function Services() {
   return (
     <ParallaxWrapper>
       <section className="py-20 text-center relative z-0 bg-gray-900">
-        {/* Efeito Parallax no título com leve destaque */}
         <Parallax speed={-3} className="relative z-10">
           <motion.h2
             className="text-5xl font-bold mb-12 text-gray-100"
