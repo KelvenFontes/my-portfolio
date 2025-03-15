@@ -36,7 +36,6 @@ export default function PaymentsExperience() {
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         >
           <FaStripe size={80} className="text-blue-500" />
-          <p className="text-gray-300 mt-4 text-xl font-semibold">Stripe</p>
         </motion.div>
 
         {/* Cartão de Crédito com efeito de rotação 3D */}
