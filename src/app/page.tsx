@@ -11,7 +11,6 @@ import ScrollToTop from "../components/ScrollToTop";
 import PaymentsExperience from "../components/PaymentsExperience";
 import TechCarousel from "../components/TechCarousel";
 import Hero from "@/components/Hero";
-import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
