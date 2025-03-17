@@ -82,7 +82,7 @@ export default function PaymentsExperience() {
 
             {/* Verso do Cartão */}
             <div
-              className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-r from-black to-gray-800 rounded-xl shadow-lg text-white"
+              className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl shadow-lg text-white"
               style={{
                 transform: "rotateY(180deg)",
                 backfaceVisibility: "hidden",
