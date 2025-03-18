@@ -4,9 +4,9 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
   return (
     <section className="max-w-3xl text-center sm:text-left mt-16">
-      <h2 className="text-4xl font-bold text-white mb-6">📩 Entre em Contato</h2>
+      <h2 className="text-4xl font-bold mb-6">📩 Entre em Contato</h2>
       <p className="text-lg text-gray-400">
-        Estou disponível para novos projetos e oportunidades! Sinta-se à vontade para entrar em contato.  
+        Estou disponível para novos projetos e oportunidades! Sinta-se à vontade para entrar em contato.
         Respondo o mais rápido possível. 🚀
       </p>
 
