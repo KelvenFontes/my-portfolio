@@ -2,12 +2,8 @@
 
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import Particles from "@tsparticles/react";
-import { Engine } from "@tsparticles/engine";
 
 export default function Footer() {
-  const particlesInit = async (engine: Engine) => {
-  };
 
   return (
     <motion.footer
@@ -16,22 +12,6 @@ export default function Footer() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="relative w-screen bg-gradient-to-r from-black via-gray-800 to-gray-600 text-gray-300 text-center py-12 mt-16 overflow-hidden"
     >
-      {/* Partículas no Fundo */}
-      <Particles
-        options={{
-          background: { color: "transparent" },
-          particles: {
-            number: { value: 30 },
-            size: { value: 2 },
-            move: { enable: true, speed: 0.3 },
-            opacity: { value: 0.4 },
-            shape: { type: "circle" },
-            line_linked: { enable: false },
-          },
-        }}
-        className="absolute inset-0 w-full h-full"
-      />
-
       {/* Frase Motivacional */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
@@ -39,7 +19,7 @@ export default function Footer() {
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
         className="text-lg font-medium text-white mb-6"
       >
-        "Criando experiências únicas, uma linha de código por vez."
+        Criando experiências únicas, uma linha de código por vez.
       </motion.p>
 
       {/* Links Sociais com Hover Suave */}
