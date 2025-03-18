@@ -78,7 +78,7 @@ export default function Navbar() {
         className="text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all ease-in-out duration-300"
         onClick={scrollToTop} // Adiciona a funcionalidade de rolar até o topo
       >
-        Kelven | Dev Frontend
+        Kelven Fontes
       </h1>
 
       {/* Menu Mobile */}
