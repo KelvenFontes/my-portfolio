@@ -14,7 +14,7 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center container mx-auto">
+    <div className="min-h-screen flex flex-col items-center mx-auto">
       <Navbar />
 
       <motion.section id="Hero" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>

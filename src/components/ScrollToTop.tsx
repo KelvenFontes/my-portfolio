@@ -1,23 +1,47 @@
-"use client";
-import { useEffect, useState } from "react";
-import { FiArrowUp } from "react-icons/fi";
+import { useState, useEffect } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
-export default function ScrollToTop() {
-  const [show, setShow] = useState(false);
+export default function BackToTopButton() {
+  const [isVisible, setIsVisible] = useState(false);
 
+  // Detectar o scroll da página e mostrar/ocultar o botão
   useEffect(() => {
-    const checkScroll = () => setShow(window.scrollY > 300);
-    window.addEventListener("scroll", checkScroll);
-    return () => window.removeEventListener("scroll", checkScroll);
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
+  // Função para rolar até o topo
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    show && (
+    isVisible && (
       <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition"
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 p-4 bg-blue-500 text-white rounded-full shadow-lg z-50 hover:bg-blue-600 transition-all"
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          zIndex: 9999, // Garante que o botão fique acima de outros elementos
+        }}
       >
-        <FiArrowUp size={24} />
+        <FaArrowUp size={24} />
       </button>
     )
   );
