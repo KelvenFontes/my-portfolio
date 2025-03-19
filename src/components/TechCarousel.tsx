@@ -1,7 +1,7 @@
 "use client";
 import Slider from "react-slick";
-import { FaReact, FaNodeJs, FaStripe, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaDatabase } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { FaReact, FaNodeJs, FaStripe, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaAws } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiMysql, SiMongodb, SiExpress, SiVercel, SiSocketdotio, SiSupabase } from "react-icons/si";
 
 export default function TechCarousel() {
     const settings = {
@@ -26,17 +26,24 @@ export default function TechCarousel() {
     };
 
     const techs = [
+      { icon: <FaHtml5 size={35} className="text-orange-500" />, name: "HTML5" },
+      { icon: <FaCss3Alt size={35} className="text-blue-500" />, name: "CSS3" },
+      { icon: <FaJs size={35} className="text-yellow-500" />, name: "JavaScript" },
+      { icon: <SiTypescript size={35} className="text-blue-600" />, name: "TypeScript" },
         { icon: <FaReact size={35} className="text-blue-500" />, name: "React" },
         { icon: <SiNextdotjs size={35} className="text-white" />, name: "Next.js" },
         { icon: <SiTailwindcss size={35} className="text-blue-400" />, name: "Tailwind CSS" },
-        { icon: <SiTypescript size={35} className="text-blue-600" />, name: "TypeScript" },
         { icon: <FaNodeJs size={35} className="text-green-500" />, name: "Node.js" },
+        { icon: <SiExpress size={35} className="text-green-500" />, name: "Express.js" },
         { icon: <FaStripe size={35} className="text-purple-500" />, name: "Stripe" },
-        { icon: <FaHtml5 size={35} className="text-orange-500" />, name: "HTML5" },
-        { icon: <FaCss3Alt size={35} className="text-blue-500" />, name: "CSS3" },
-        { icon: <FaJs size={35} className="text-yellow-500" />, name: "JavaScript" },
         { icon: <FaGitAlt size={35} className="text-red-500" />, name: "Git" },
-        { icon: <FaDatabase size={35} className="text-gray-500" />, name: "Banco de Dados" },
+        { icon: <FaGithub size={35} className="text-gray-800" />, name: "GitHub" },
+        { icon: <SiVercel size={35} className="text-black" />, name: "Vercel" },
+        { icon: <FaAws size={35} className="text-orange-500" />, name: "AWS" },
+        { icon: <SiMysql size={35} className="text-gray-200" />, name: "MySQL" },
+        { icon: <SiMongodb size={35} className="text-green-800" />, name: "MongoDB" },
+        { icon: <SiSupabase size={35} className="text-green-500" />, name: "Supabase" },
+        { icon: <SiSocketdotio size={35} className="text-gray-500" />, name: "Socket.io" },
     ];
 
     return (
