@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useMemo } from "react";
-import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp, FaFilePdf } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { BsDownload } from "react-icons/bs";
