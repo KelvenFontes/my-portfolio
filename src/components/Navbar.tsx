@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiMenu, FiX, FiUser, FiCode, FiFolder, FiMail } from "react-icons/fi";
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState<boolean | null>(null); // Estado inicial como null
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Controle do menu mobile
-  const [activeSection, setActiveSection] = useState<string>(""); // Para destacar a seção ativa
+  const [darkMode, setDarkMode] = useState<boolean | null>(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -19,7 +19,6 @@ export default function Navbar() {
       }
     }
 
-    // Detecta a seção ativa durante o scroll
     const onScroll = () => {
       const sections = ["about", "technologies", "projects", "contact"];
       let currentSection = "";
@@ -59,11 +58,11 @@ export default function Navbar() {
 
   if (darkMode === null) return null;
 
-   // Função para rolar até o topo
-   const scrollToTop = () => {
+  // Função para rolar até o topo
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Adiciona uma animação suave
+      behavior: "smooth",
     });
   };
 
@@ -72,11 +71,11 @@ export default function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 w-full text-white p-4 shadow-lg z-50 flex justify-between items-center px-8 bg-gradient-to-r from-gray-800 via-blue-900 to-gray-900"
+      className="fixed top-0 w-full text-white p-3 shadow-lg z-50 flex justify-between items-center px-8 bg-gradient-to-r from-gray-800 via-blue-900 to-gray-900"
     >
       <h1
         className="text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all ease-in-out duration-300"
-        onClick={scrollToTop} // Adiciona a funcionalidade de rolar até o topo
+        onClick={scrollToTop}
       >
         Kelven Fontes
       </h1>
@@ -93,12 +92,18 @@ export default function Navbar() {
 
       {/* Menu Desktop */}
       <ul
-        className={`md:flex gap-6 items-center ${isMobileMenuOpen ? "flex flex-col absolute top-16 left-0 bg-gray-900 w-full p-4 shadow-lg" : "hidden"}`}
+        className={`md:flex gap-6 items-center ${
+          isMobileMenuOpen
+            ? "flex flex-col absolute top-16 left-0 bg-gray-900 w-full p-4 shadow-lg"
+            : "hidden"
+        }`}
       >
         <li>
           <a
             href="#about"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "about" ? "text-blue-400" : ""}`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
+              activeSection === "about" ? "text-blue-400" : ""
+            }`}
           >
             <FiUser className="inline-block mr-2" /> Sobre
           </a>
@@ -106,7 +111,9 @@ export default function Navbar() {
         <li>
           <a
             href="#technologies"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "skills" ? "text-blue-400" : ""}`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
+              activeSection === "skills" ? "text-blue-400" : ""
+            }`}
           >
             <FiCode className="inline-block mr-2" /> Habilidades
           </a>
@@ -114,7 +121,9 @@ export default function Navbar() {
         <li>
           <a
             href="#projects"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "projects" ? "text-blue-400" : ""}`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
+              activeSection === "projects" ? "text-blue-400" : ""
+            }`}
           >
             <FiFolder className="inline-block mr-2" /> Projetos
           </a>
@@ -122,20 +131,31 @@ export default function Navbar() {
         <li>
           <a
             href="#contact"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "contact" ? "text-blue-400" : ""}`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
+              activeSection === "contact" ? "text-blue-400" : ""
+            }`}
           >
             <FiMail className="inline-block mr-2" /> Contato
           </a>
         </li>
       </ul>
 
-      {/* Botão Dark Mode */}
+      {/* Botão Dark Mode com animação */}
       <button
         onClick={() => setDarkMode(!darkMode)}
-        className="text-2xl transition-all duration-300 transform hover:scale-125 hover:text-blue-500"
+        className="text-2xl transition-all duration-500 transform hover:scale-125 hover:text-blue-500 relative w-10 h-10 flex items-center justify-center"
       >
-        {darkMode ? <FiSun /> : <FiMoon />}
+        <motion.span
+          key={darkMode ? "sun" : "moon"} // Garante que o ícone seja recriado na troca
+          initial={{ rotate: 0, opacity: 0 }}
+          animate={{ rotate: 360, opacity: 1 }}
+          exit={{ rotate: -360, opacity: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="absolute"
+        >
+          {darkMode ? <FiSun className="text-yellow-400" /> : <FiMoon className="text-gray-300" />}
+        </motion.span>
       </button>
-    </motion.nav >
+    </motion.nav>
   );
 }
