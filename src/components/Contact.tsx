@@ -135,7 +135,7 @@ const Contact = () => {
             <FaGithub size={24} /> GitHub
           </a>
           <a
-            href="mailto:kelvenbentofontes@email.com"
+            href="mailto:kelvenbentofontes@gmail.com"
             aria-label="Envie um e-mail"
             className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white font-medium px-4 py-2 rounded-lg transition-transform transform hover:scale-110 hover:shadow-lg hover:ring-2 hover:ring-red-500 animate__animated animate__pulse animate__infinite animate__delay-6s"
           >
