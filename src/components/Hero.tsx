@@ -1,7 +1,8 @@
 "use client";
 import { useState, useEffect, useMemo } from "react";
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
-import CircularProgress from "./CircularProgress";
+import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function HeroSection() {
   const texts = useMemo(
@@ -44,19 +45,45 @@ export default function HeroSection() {
     <div className="flex flex-col items-center justify-center text-center px-4 sm:py-10 mt-20 md:mt-16">
 
 
+      <motion.div className="relative w-52 h-52 flex items-center justify-center p-0 m-0">
+        {/* Borda SVG ajustada no mesmo nível que a imagem */}
+        <motion.svg
+          className="absolute inset-0 w-full h-full"
+          fill="transparent"
+          viewBox="0 0 506 506"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <motion.circle
+            cx="253"
+            cy="253"
+            r="250"  // Aumentando o raio para 150 para garantir que o círculo não fique tão pequeno
+            stroke="#11699c"
+            strokeWidth="8"
+            strokeLinejoin="round"
+            initial={{ strokeDasharray: "24 10 0 0" }}
+            animate={{
+              strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+              rotate: [0, 360]  // A rotação continua suave
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          />
+        </motion.svg>
 
-
-      {/* Foto de Perfil com o Progresso Circular */}
-      <div className="relative w-40 h-40 sm:w-48 sm:h-48">
-        <CircularProgress size={200} strokeWidth={10} duration={2000} />
-        <div className="w-40 h-40 sm:w-48 sm:h-48 bg-gray-700 rounded-full overflow-hidden flex items-center justify-center">
-          <img
-            src="/perfil.jpg"
-            alt="Foto de Perfil"
-            className="w-full h-full object-cover rounded-full"
+        {/* Imagem centralizada dentro do círculo */}
+        <div className="w-48 h-48 rounded-full overflow-hidden flex items-center justify-center">
+          <Image
+            src="/assets/kelven.png"  // Caminho correto da imagem
+            alt="Imagem"
+            width={160}
+            height={160}
+            className="w-full h-full object-cover"
           />
         </div>
-      </div>
+      </motion.div>
 
 
 
