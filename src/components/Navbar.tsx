@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiMenu, FiX, FiUser, FiCode, FiFolder, FiMail } from "react-icons/fi";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState<boolean | null>(null);
@@ -73,12 +75,21 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="fixed top-0 w-full text-white p-3 shadow-lg z-50 flex justify-between items-center px-8 bg-gradient-to-r from-gray-800 via-blue-900 to-gray-900"
     >
-      <h1
-        className="text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all ease-in-out duration-300"
-        onClick={scrollToTop}
-      >
-        Kelven Fontes
-      </h1>
+
+      <Link href="/" className="flex items-center gap-2" onClick={scrollToTop}>
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          width={50}
+          height={50}
+          className="rounded-full cursor-pointer transition-transform duration-300 transform hover:scale-110"
+        />
+        <h1
+          className="text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all ease-in-out duration-300"
+        >
+          Kelven Fontes
+        </h1>
+      </Link>
 
       {/* Menu Mobile */}
       <div className="md:hidden flex items-center">
@@ -92,18 +103,16 @@ export default function Navbar() {
 
       {/* Menu Desktop */}
       <ul
-        className={`md:flex gap-6 items-center ${
-          isMobileMenuOpen
-            ? "flex flex-col absolute top-16 left-0 bg-gray-900 w-full p-4 shadow-lg"
-            : "hidden"
-        }`}
+        className={`md:flex gap-6 items-center ${isMobileMenuOpen
+          ? "flex flex-col absolute top-16 left-0 bg-gray-900 w-full p-4 shadow-lg"
+          : "hidden"
+          }`}
       >
         <li>
           <a
             href="#about"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
-              activeSection === "about" ? "text-blue-400" : ""
-            }`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "about" ? "text-blue-400" : ""
+              }`}
           >
             <FiUser className="inline-block mr-2" /> Sobre
           </a>
@@ -111,9 +120,8 @@ export default function Navbar() {
         <li>
           <a
             href="#technologies"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
-              activeSection === "skills" ? "text-blue-400" : ""
-            }`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "skills" ? "text-blue-400" : ""
+              }`}
           >
             <FiCode className="inline-block mr-2" /> Habilidades
           </a>
@@ -121,9 +129,8 @@ export default function Navbar() {
         <li>
           <a
             href="#projects"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
-              activeSection === "projects" ? "text-blue-400" : ""
-            }`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "projects" ? "text-blue-400" : ""
+              }`}
           >
             <FiFolder className="inline-block mr-2" /> Projetos
           </a>
@@ -131,9 +138,8 @@ export default function Navbar() {
         <li>
           <a
             href="#contact"
-            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${
-              activeSection === "contact" ? "text-blue-400" : ""
-            }`}
+            className={`text-lg font-medium hover:text-blue-400 transition-all duration-300 transform hover:scale-110 ${activeSection === "contact" ? "text-blue-400" : ""
+              }`}
           >
             <FiMail className="inline-block mr-2" /> Contato
           </a>
