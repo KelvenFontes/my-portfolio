@@ -88,8 +88,6 @@ const Contact = () => {
     }
   };
 
-
-
   return (
     <section className="relative max-w-3xl mx-auto text-center sm:text-left mt-16 px-6 overflow-hidden">
       {/* Fundo com parallax */}
@@ -114,8 +112,8 @@ const Contact = () => {
           Estou disponível para novos projetos e oportunidades! Sinta-se à vontade para entrar em contato. Respondo o mais rápido possível. 🚀
         </p>
 
-        {/* Links de Redes Sociais centralizados */}
-        <div className="flex justify-center gap-6 mt-6 animate__animated animate__fadeIn animate__delay-3s">
+        {/* Links de Redes Sociais responsivos */}
+        <div className="flex flex-wrap justify-center gap-6 mt-6 animate__animated animate__fadeIn animate__delay-3s">
           <a
             href="https://linkedin.com/in/kelvenfontes"
             target="_blank"
@@ -152,7 +150,7 @@ const Contact = () => {
           </a>
         </div>
 
-        {/* Formulário de Contato */}
+        {/* Formulário de Contato responsivo */}
         <form className="mt-8 flex flex-col gap-6 animate__animated animate__slideInUp animate__delay-8s" onSubmit={handleSubmit}>
           <input
             type="text"
