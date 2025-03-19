@@ -10,7 +10,7 @@ export default function PaymentsExperience() {
     <section className="w-full max-w-5xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center relative overflow-hidden">
       {/* Animação de entrada do título */}
       <motion.h2
-        className="text-4xl font-bold mb-6"
+        className="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-600"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -24,14 +24,14 @@ export default function PaymentsExperience() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
-        Desenvolvo <strong>integrações avançadas</strong> com o <span className="text-blue-400 font-semibold">Stripe</span>, incluindo <strong>checkout seguro</strong>, <strong>assinaturas recorrentes</strong> e <strong>webhooks</strong> para notificações em tempo real.
+        Desenvolvo <strong>integrações personalizadas</strong> com o <span className="text-blue-400 font-semibold">Stripe</span>, como <strong>processamento de pagamentos online</strong>, <strong>cobranças recorrentes</strong>, e <strong>notificações em tempo real</strong> usando webhooks.
       </motion.p>
 
       {/* Container com Logo do Stripe + Cartão */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Ícone do Stripe */}
         <motion.div
-          className="bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center justify-center w-48 h-48 transition-transform hover:scale-105"
+          className="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center justify-center w-48 h-48 transition-transform hover:scale-105"
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         >
@@ -55,7 +55,7 @@ export default function PaymentsExperience() {
           >
             {/* Frente do Cartão */}
             <div
-              className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg text-white"
+              className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-xl text-white"
               style={{ backfaceVisibility: "hidden" }}
             >
               {/* Chip e Bandeira */}
@@ -82,7 +82,7 @@ export default function PaymentsExperience() {
 
             {/* Verso do Cartão */}
             <div
-              className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl shadow-lg text-white"
+              className="absolute inset-0 flex flex-col justify-between p-6 bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl shadow-xl text-white"
               style={{
                 transform: "rotateY(180deg)",
                 backfaceVisibility: "hidden",
@@ -114,18 +114,31 @@ export default function PaymentsExperience() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
       >
-        Minhas implementações incluem <strong>pagamentos únicos</strong>, <strong>assinaturas</strong>, <strong>cobranças automáticas</strong> e <strong>integração com e-commerce</strong>.
+        Realizo a integração completa de <strong>pagamentos online</strong> em plataformas digitais, permitindo que você implemente <strong>transações seguras</strong> de maneira eficiente.
       </motion.p>
 
-      {/* Botão animado */}
-      <motion.a
-        href="https://stripe.com/docs"
-        target="_blank"
-        className="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-md relative overflow-hidden transition-transform hover:scale-105"
-        whileHover={{ boxShadow: "0px 0px 15px rgba(0, 140, 255, 0.6)" }}
-      >
-        Saiba mais sobre Stripe
-      </motion.a>
+      {/* Botões chamativos */}
+      <div className="mt-8 flex gap-6 justify-center">
+        {/* Botão para testar o projeto */}
+        <motion.a
+          href="https://seu-projeto-exemplo.com/teste" // Substitua pelo link do seu projeto
+          target="_blank"
+          className="inline-block bg-gradient-to-r from-green-500 to-teal-500 hover:from-teal-500 hover:to-green-500 text-white font-medium py-3 px-8 rounded-full shadow-lg relative overflow-hidden transition-transform hover:scale-110 hover:shadow-xl"
+          whileHover={{ boxShadow: "0px 0px 15px rgba(0, 255, 0, 0.6)" }}
+        >
+          Teste o Projeto
+        </motion.a>
+
+        {/* Botão para saber mais sobre o Stripe */}
+        <motion.a
+          href="https://stripe.com/docs"
+          target="_blank"
+          className="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-indigo-600 hover:to-blue-600 text-white font-medium py-3 px-8 rounded-full shadow-lg relative overflow-hidden transition-transform hover:scale-110 hover:shadow-xl"
+          whileHover={{ boxShadow: "0px 0px 15px rgba(0, 140, 255, 0.6)" }}
+        >
+          Saiba Mais sobre o Stripe
+        </motion.a>
+      </div>
     </section>
   );
 }
