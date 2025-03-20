@@ -13,6 +13,9 @@ import TechCarousel from "../components/TechCarousel";
 import Hero from "@/components/Hero";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Spotlight } from "@/components/ui/Spotligh";
+import { CodeBlock } from "@/components/CodeBlock";
+
+
 
 export default function Home() {
   return (
@@ -26,9 +29,29 @@ export default function Home() {
         <Hero />
       </motion.section>
 
-      <motion.section id="about" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}>
-        <About />
-      </motion.section>
+      <div className="w-full max-w-7xl mx-auto flex flex-col  md:flex-row items-center justify-between py-16 px-6">
+        {/* Seção Sobre Mim */}
+        <motion.section
+          id="about"
+          className="w-full md:w-1/2 px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <About />
+        </motion.section>
+
+        {/* Code Block ao lado */}
+        <motion.section
+          className="w-full md:w-1/2 px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <CodeBlock />
+        </motion.section>
+      </div>
+
 
       <motion.section id="services" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
         <Services />

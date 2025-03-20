@@ -1,3 +1,10 @@
+"use client";
+
+import { CodeBlockUi } from "@/components/ui/code-block";
+
+export function CodeBlock() {
+  // Componente "About" com JSX
+  const code = `
 const About = () => {
   return (
     <section className="max-w-3xl text-center sm:text-left">
@@ -16,3 +23,18 @@ const About = () => {
 };
 
 export default About;
+
+  `;
+
+  return (
+    <div className="flex items-center justify-center w-full min-h-screen bg-gray-900 p-1">
+      <div className="w-full max-w-4xl bg-gray-800 p-1 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+        <CodeBlockUi
+          language="tsx"
+          filename="About.tsx"
+          code={code}
+        />
+      </div>
+    </div>
+  );
+}
