@@ -37,7 +37,7 @@ export default function Footer() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative w-full max-w-full bg-gradient-to-r from-black via-gray-800 to-black text-gray-300 text-center py-12 mt-16 overflow-hidden z-10"
+      className="relative w-full max-w-full bg-gradient-to-r from-black via-gray-800 to-black text-gray-300 text-center py-12 overflow-hidden z-10"
     >
       {/* Frase Motivacional */}
       <motion.p
