@@ -14,6 +14,7 @@ import Hero from "@/components/Hero";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Spotlight } from "@/components/ui/Spotligh";
 import { CodeBlock } from "@/components/CodeBlock";
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 
 
@@ -79,9 +80,13 @@ export default function Home() {
 
       {/* <Experience /> */}
 
-      <motion.section id="contact" className="w-full max-w-4xl px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-        <Contact />
-      </motion.section>
+      <div className="flex items-center justify-center">
+        <BackgroundBeamsWithCollision>
+          <motion.section id="contact" className="w-full max-w-4xl px-6 md:px-12 mb-16 mx-auto text-center flex flex-col items-center justify-center" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+            <Contact />
+          </motion.section>
+        </BackgroundBeamsWithCollision>
+      </div>
 
       <Footer />
       <ScrollToTop />
