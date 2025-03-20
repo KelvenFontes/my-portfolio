@@ -1,61 +1,23 @@
 "use client";
-import { useState, useEffect, useMemo } from "react";
+
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from 'next/image';
 import { BsDownload } from "react-icons/bs";
+import { TypingEffect } from "./TypingEffect";
 
 export default function HeroSection() {
-  const texts = useMemo(
-    () => [
-      "Desenvolvedor Full Stack",
-      "Especialista em Front-end",
-    ],
-    []
-  );
-
-  const [textIndex, setTextIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  const maxTextLength = useMemo(() => Math.max(...texts.map((t) => t.length)), [texts]);
-
-  useEffect(() => {
-    const currentText = texts[textIndex];
-
-    if (!isDeleting && charIndex === currentText.length) {
-      setTimeout(() => setIsDeleting(true), 1200);
-      return;
-    }
-
-    if (isDeleting && charIndex === 0) {
-      setIsDeleting(false);
-      setTextIndex((prev) => (prev + 1) % texts.length);
-      return;
-    }
-
-    const typingSpeed = isDeleting ? 50 : 80;
-    const timeout = setTimeout(() => {
-      setCharIndex((prev) => prev + (isDeleting ? -1 : 1));
-    }, typingSpeed);
-
-    return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, textIndex, texts]);
 
   return (
     <div className="flex flex-col md:flex-row items-center text-center md:text-left px-4 sm:py-10 mt-20 md:mt-16 max-w-5xl mx-auto">
 
       {/* Texto e botões (Esquerda no Desktop, Abaixo no Mobile) */}
-      <div className="flex flex-col items-center md:items-start md:w-1/2 order-2 md:order-1">
-        <h1 className="text-2xl sm:text-3xl font-bold">
-          Olá, eu sou o <span className="text-blue-400">Kelven</span>
+      <div className="flex flex-col items-center md:items-start md:w-full order-2 md:order-1">
+        <h1 className="text-xl sm:text-3xl lg:text-5xl font-bold">
+          Olá, eu sou o <span className="text-blue-400 block">Kelven Fontes</span>
         </h1>
-        <p
-          className="text-lg text-blue-300 mt-2 min-h-[24px] sm:min-h-[28px]"
-          style={{ minWidth: `${maxTextLength}ch` }}
-        >
-          {texts[textIndex].substring(0, charIndex)}
-        </p>
+
+        <TypingEffect />
 
         {/* Links (Redes sociais) */}
         <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
