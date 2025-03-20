@@ -25,7 +25,7 @@ export default function HeroSection() {
             href="https://www.linkedin.com/in/kelvenfontes"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 border border-blue-600 text-blue-600 px-4 py-2 rounded-md shadow-md hover:bg-blue-600 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-blue-600 text-white px-4 py-2 rounded-md shadow-md bg-blue-600 hover:text-white transition text-sm sm:text-base"
           >
             <FaLinkedin />
             LinkedIn
@@ -34,7 +34,7 @@ export default function HeroSection() {
             href="https://github.com/kelvenfontes"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 border border-gray-800 text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-800 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-gray-800 text-white px-4 py-2 rounded-md shadow-md bg-gray-800 hover:text-white transition text-sm sm:text-base"
           >
             <FaGithub />
             GitHub
@@ -42,7 +42,7 @@ export default function HeroSection() {
           <a
             href="mailto:kelvenbentofontes@gmail.com"
             aria-label="Envie um e-mail"
-            className="flex items-center gap-2 border border-red-500 text-red-500 px-4 py-2 rounded-md shadow-md hover:bg-red-500 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-red-500 text-white px-4 py-2 rounded-md shadow-md bg-red-500 hover:text-white transition text-sm sm:text-base"
           >
             <FaEnvelope />
             E-mail
@@ -51,7 +51,7 @@ export default function HeroSection() {
             href="https://wa.me/+5511953647573"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 border border-green-600 text-green-600 px-4 py-2 rounded-md shadow-md hover:bg-green-600 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-green-600 text-white px-4 py-2 rounded-md shadow-md bg-green-600 hover:text-white transition text-sm sm:text-base"
           >
             <FaWhatsapp />
             WhatsApp
@@ -64,7 +64,7 @@ export default function HeroSection() {
             href="/assets/kelven-cv.pdf" // Substitua pelo link correto do seu CV
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 border-2 border-sky-700 text-sky-700 px-6 py-3 rounded-lg shadow-md text-md font-semibold hover:bg-sky-700 hover:text-white transition-transform transform hover:scale-102"
+            className="flex items-center justify-center gap-3 border-2 border-sky-700 text-white px-6 py-3 rounded-lg shadow-md text-md font-semibold bg-sky-700 hover:text-white transition-transform transform hover:scale-102"
           >
             <span>Download CV</span>
             <BsDownload size={24} />
