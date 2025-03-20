@@ -11,7 +11,9 @@
   "dependencies": {
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.5.0",
+    "motion": "^12.5.0",
     "next": "15.1.6",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
@@ -21,7 +23,8 @@
     "react-parallax-tilt": "^1.7.286",
     "react-scroll-parallax": "^3.4.5",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
