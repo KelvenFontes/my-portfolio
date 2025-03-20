@@ -29,11 +29,11 @@ export default function Home() {
         <Hero />
       </motion.section>
 
-      <div className="w-full max-w-7xl mx-auto flex flex-col  md:flex-row items-center justify-between py-16 px-6">
+      <div className="w-full max-w-8xl mx-auto flex flex-col lg:flex-row items-center justify-between lg:mt-10 py-16 px-6">
         {/* Seção Sobre Mim */}
         <motion.section
           id="about"
-          className="w-full md:w-1/2 px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center"
+          className="w-full lg:w-1/2 px-6 lg:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* Code Block ao lado */}
         <motion.section
-          className="w-full md:w-1/2 px-6 md:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center"
+          className="w-full lg:w-1/2 px-6 lg:px-12 py-16 mx-auto text-center flex flex-col items-center justify-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
