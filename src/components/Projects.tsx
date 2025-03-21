@@ -106,7 +106,7 @@ const Projects = () => {
       </div>
 
       {/* Exibição dos Projetos em Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
         {filteredProjectsByTitle.length === 0 ? (
           <p className="text-gray-400">Nenhum projeto encontrado.</p>
         ) : (
