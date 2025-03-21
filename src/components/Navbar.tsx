@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FiSun, FiMoon, FiMenu, FiX, FiUser, FiCode, FiFolder, FiMail } from "react-icons/fi";
+import { FiMenu, FiX, FiUser, FiCode, FiFolder, FiMail } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -147,7 +147,7 @@ export default function Navbar() {
       </ul>
 
       {/* Botão Dark Mode com animação */}
-      <button
+      {/* <button
         onClick={() => setDarkMode(!darkMode)}
         className="text-2xl transition-all duration-500 transform hover:scale-125 hover:text-blue-500 relative w-10 h-10 flex items-center justify-center"
       >
@@ -161,7 +161,7 @@ export default function Navbar() {
         >
           {darkMode ? <FiSun className="text-yellow-400" /> : <FiMoon className="text-gray-300" />}
         </motion.span>
-      </button>
+      </button> */}
     </motion.nav>
   );
 }
