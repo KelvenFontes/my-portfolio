@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Image from 'next/image';
 import { BsDownload } from "react-icons/bs";
 import { TypingEffect } from "./TypingEffect";
+import Link from "next/link";
 
 export default function HeroSection() {
 
@@ -21,54 +22,55 @@ export default function HeroSection() {
 
         {/* Links (Redes sociais) */}
         <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
-          <a
+          <Link
             href="https://www.linkedin.com/in/kelvenfontes"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 border border-blue-600 text-white px-4 py-2 rounded-md shadow-md bg-blue-600 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-blue-600 text-white px-4 py-2 rounded-md shadow-md bg-blue-600 hover:bg-blue-700 transition text-sm sm:text-base z-20"
           >
             <FaLinkedin />
             LinkedIn
-          </a>
-          <a
+          </Link>
+
+          <Link
             href="https://github.com/kelvenfontes"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 border border-gray-800 text-white px-4 py-2 rounded-md shadow-md bg-gray-800 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-gray-800 text-white px-4 py-2 rounded-md shadow-md bg-gray-800 hover:text-white transition text-sm sm:text-base z-20"
           >
             <FaGithub />
             GitHub
-          </a>
-          <a
+          </Link>
+          <Link
             href="mailto:kelvenbentofontes@gmail.com"
             aria-label="Envie um e-mail"
-            className="flex items-center gap-2 border border-red-500 text-white px-4 py-2 rounded-md shadow-md bg-red-500 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-red-500 text-white px-4 py-2 rounded-md shadow-md bg-red-500 hover:text-white transition text-sm sm:text-base z-20"
           >
             <FaEnvelope />
             E-mail
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://wa.me/+5511953647573"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 border border-green-600 text-white px-4 py-2 rounded-md shadow-md bg-green-600 hover:text-white transition text-sm sm:text-base"
+            className="flex items-center gap-2 border border-green-600 text-white px-4 py-2 rounded-md shadow-md bg-green-600 hover:text-white transition text-sm sm:text-base z-20"
           >
             <FaWhatsapp />
             WhatsApp
-          </a>
+          </Link>
         </div>
 
         {/* Botão "Ver CV" - Destaque maior */}
         <div className="mt-6 flex items-center justify-center">
-          <a
-            href="/assets/kelven-cv.pdf" // Substitua pelo link correto do seu CV
+          <Link
+            href="/assets/kelven-cv.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 border-2 border-sky-700 text-white px-6 py-3 rounded-lg shadow-md text-md font-semibold bg-sky-700 hover:text-white transition-transform transform hover:scale-102"
           >
             <span>Download CV</span>
             <BsDownload size={24} />
-          </a>
+          </Link>
         </div>
       </div>
 

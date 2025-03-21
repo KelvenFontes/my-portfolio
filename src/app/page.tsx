@@ -14,7 +14,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Spotlight } from "@/components/ui/Spotligh";
 import { CodeBlock } from "@/components/CodeBlock";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
-import { Experience } from "@/components/Experience";
+// import { Experience } from "@/components/Experience";
 
 
 
@@ -78,7 +78,7 @@ export default function Home() {
 
       {/* <Stats /> */}
 
-      <Experience />
+      {/* <Experience /> */}
 
       <div className="flex items-center justify-center">
         <BackgroundBeamsWithCollision>

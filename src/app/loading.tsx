@@ -55,7 +55,7 @@ export default function Loading() {
           ))}
         </div>
 
-        <motion.p
+        {/* <motion.p
           className="mt-10 text-lg text-gray-300 font-mono tracking-wide"
           animate={{
             opacity: [0.5, 1, 0.5],
@@ -69,7 +69,7 @@ export default function Loading() {
           }}
         >
           🚀 Ajustando a realidade...
-        </motion.p>
+        </motion.p> */}
       </motion.div>
     )
   );
