@@ -120,14 +120,7 @@ export default function PaymentsExperience() {
       {/* Botões chamativos */}
       <div className="mt-8 flex gap-6 justify-center">
         {/* Botão para testar o projeto */}
-        <motion.a
-          href="https://seu-projeto-exemplo.com/teste" // Substitua pelo link do seu projeto
-          target="_blank"
-          className="inline-block bg-gradient-to-r from-green-500 to-teal-500 hover:from-teal-500 hover:to-green-500 text-white font-medium py-3 px-8 rounded-full shadow-lg relative overflow-hidden transition-transform hover:scale-110 hover:shadow-xl"
-          whileHover={{ boxShadow: "0px 0px 15px rgba(0, 255, 0, 0.6)" }}
-        >
-          Teste o Projeto
-        </motion.a>
+      
 
         {/* Botão para saber mais sobre o Stripe */}
         <motion.a
