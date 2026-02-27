@@ -31,6 +31,7 @@ export default function Footer() {
     };
   }, []);
 
+  
   return (
     <motion.footer
       id="footer"
