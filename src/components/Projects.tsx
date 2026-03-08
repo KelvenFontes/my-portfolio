@@ -128,8 +128,8 @@ const Projects = () => {
                 <Image
                   src={project.image}
                   alt={`Imagem ilustrativa do projeto ${project.title}`}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: "cover" }}
                   className="rounded-t-lg"
                   priority
                   placeholder="blur"
