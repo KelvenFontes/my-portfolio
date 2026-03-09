@@ -77,7 +77,7 @@ export default function Navbar() {
             href="#contact"
             className="hidden md:block bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
-            Hire Me
+            Let's Talk
           </Link>
 
           {/* HAMBURGER */}
@@ -137,7 +137,7 @@ export default function Navbar() {
             href="#contact"
             className="bg-yellow-400 text-black px-4 py-2 rounded-full font-semibold hover:scale-105 transition"
           >
-            Hire Me
+            Let's Talk
           </Link>
 
         </div>
