@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import SafeLottie from '@/components/SafeLottie'; // Componente corrigido para evitar SSR
-import Navbar from '@/components/Navbar'; // Adicionando a Navbar
+import Navbar from '@/components/NavbarOld'; // Adicionando a Navbar
 import animationData from '../../public/lotties/404-animation.json'; // Caminho correto
 import Link from 'next/link'; // Para adicionar um botão de volta
 
