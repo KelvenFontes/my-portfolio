@@ -4,10 +4,10 @@ import { TypewriterEffect } from "./ui/typewriter-effect";
 export function TypingEffect() {
   const words = [
     {
-      text: "Desenvolvedor",
+      text: "Data",
     },
     {
-      text: "Front-end",
+      text: "Analyst",
     },
     // {
     //   text: "Front-end",
