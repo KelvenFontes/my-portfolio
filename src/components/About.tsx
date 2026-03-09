@@ -14,7 +14,7 @@ export default function About() {
           <div className="absolute w-[380px] h-[420px] bg-[#0d1a35] rounded-lg"></div>
 
           <Image
-            src="/perfil.png"
+            src="/assets/perfil.png"
             alt="Kelven"
             width={380}
             height={420}

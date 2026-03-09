@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import PageLoader from "@/components/PageLoader"; // Importando o PageLoader
+// import PageLoader from "@/components/PageLoader"; // Importando o PageLoader
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -18,9 +18,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
-        <PageLoader>
+        {/* <PageLoader> */}
           {children}
-        </PageLoader>
+        {/* </PageLoader> */}
       </body>
     </html>
   );
