@@ -1,0 +1,9 @@
+{
+  "hero": {
+    "hello": "Hello, I'm",
+    "role": "Data Analyst",
+    "description": "I turn complex data into clear insights that help businesses make smarter decisions.",
+    "contact": "Contact Me",
+    "download": "Download CV"
+  }
+}

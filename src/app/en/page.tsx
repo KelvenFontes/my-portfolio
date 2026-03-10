@@ -1,4 +1,5 @@
-"use client";
+
+import { getDictionary } from "@/lib/getDictionary"
 
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -10,13 +11,15 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Skills from "@/components/Skills";
 import TechCarousel from "@/components/TechCarousel";
 
-export default function Home() {
+export default async function Home() {
+
+  const dict = await getDictionary("en")
+
   return (
     <>
-
       <Navbar />
 
-      <Hero />
+      <Hero dict={dict}/>
 
       <About />
 

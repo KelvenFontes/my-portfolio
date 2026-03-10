@@ -4,7 +4,8 @@ import Image from "next/image"
 import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa"
 import { BsDownload } from "react-icons/bs"
 
-export default function Hero() {
+
+export default function Hero({ dict }:any) {
   return (
     <section className="min-h-screen flex items-center text-white bg-gradient-to-br from-[#081225] via-[#0d1a35] to-[#020617] px-6 pt-28">
 
@@ -14,7 +15,7 @@ export default function Hero() {
         <div className="order-2 md:order-1 text-center md:text-left animate-fadeIn">
 
           <p className="text-yellow-400 font-medium mb-3">
-            Hello, I'm
+            {dict.hero.hello}
           </p>
 
           <h1 className="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
