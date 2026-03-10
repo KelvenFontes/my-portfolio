@@ -1,111 +1,157 @@
+"use client"
+
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+
 export default function Contact() {
   return (
     <section
       id="contato"
       className="bg-[#081225] text-white py-28 px-6"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+      <div className="max-w-5xl mx-auto">
 
-        {/* FORMULÁRIO */}
-        <div>
+        {/* HEADER */}
+        <div className="text-center mb-20 relative">
 
-          <h2 className="text-2xl font-bold mb-6">
-            Just say Hello
+          <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04] tracking-widest">
+            CONTACT
           </h2>
 
-          <form className="space-y-5">
-
-            <input
-              type="text"
-              placeholder="Seu nome"
-              className="w-full bg-[#0f1f3d] border border-gray-700 p-4 rounded focus:outline-none focus:border-yellow-400"
-            />
-
-            <input
-              type="email"
-              placeholder="Seu email"
-              className="w-full bg-[#0f1f3d] border border-gray-700 p-4 rounded focus:outline-none focus:border-yellow-400"
-            />
-
-            <input
-              type="text"
-              placeholder="Assunto"
-              className="w-full bg-[#0f1f3d] border border-gray-700 p-4 rounded focus:outline-none focus:border-yellow-400"
-            />
-
-            <textarea
-              placeholder="Sua mensagem"
-              rows={5}
-              className="w-full bg-[#0f1f3d] border border-gray-700 p-4 rounded focus:outline-none focus:border-yellow-400"
-            />
-
-            <button
-              type="submit"
-              className="bg-yellow-400 text-black px-6 py-3 rounded-full font-medium hover:scale-105 transition"
-            >
-              Send message
-            </button>
-
-          </form>
-
-        </div>
-
-        {/* INFO */}
-        <div>
-
-          <p className="text-yellow-400 font-semibold mb-2">
+          <p className="text-yellow-400 font-semibold tracking-widest relative">
             CONTACT ME
           </p>
 
-          <h3 className="text-xl font-bold mb-6">
-            Informações de Contato
-          </h3>
+          <div className="w-16 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
 
-          <p className="text-gray-400 mb-8">
-            Se quiser conversar sobre projetos, dados ou oportunidades
-            profissionais, fique à vontade para entrar em contato.
-          </p>
+        </div>
 
-          <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-24 items-start">
 
-            <div>
-              <p className="font-semibold">Email</p>
-              <p className="text-gray-400">kelven@email.com</p>
-            </div>
+          {/* FORM */}
+          <div>
 
-            <div>
-              <p className="font-semibold">Telefone</p>
-              <p className="text-gray-400">+55 11 99999-9999</p>
-            </div>
+            <h3 className="text-xl font-semibold mb-8">
+              Just say <span className="text-yellow-400">Hello</span>
+            </h3>
 
-            <div>
-              <p className="font-semibold">Local</p>
-              <p className="text-gray-400">Brasil</p>
-            </div>
+            <form className="space-y-5">
 
+              <input
+                type="text"
+                placeholder="Seu nome"
+                className="w-full bg-[#0f1f3d]/60 border border-gray-700 p-4 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
+              />
+
+              <input
+                type="email"
+                placeholder="Seu email"
+                className="w-full bg-[#0f1f3d]/60 border border-gray-700 p-4 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
+              />
+
+              <input
+                type="text"
+                placeholder="Assunto"
+                className="w-full bg-[#0f1f3d]/60 border border-gray-700 p-4 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition"
+              />
+
+              <textarea
+                rows={5}
+                placeholder="Sua mensagem"
+                className="w-full bg-[#0f1f3d]/60 border border-gray-700 p-4 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 transition resize-none"
+              />
+
+              <button
+                type="submit"
+                className="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-lg shadow-yellow-400/20"
+              >
+                Send message
+              </button>
+
+            </form>
           </div>
 
-          {/* SOCIAL */}
-          <div className="mt-10">
+          {/* INFO */}
+          <div>
 
-            <p className="font-semibold mb-4">
-              Redes sociais
-            </p>
+            <h3 className="text-xl font-semibold mb-8">
+              Contact Info
+            </h3>
 
-            <div className="flex gap-4">
+            <div className="space-y-8">
+
+              {/* EMAIL */}
+              <div className="flex items-start gap-4">
+
+                <div className="text-yellow-400 mt-1">
+                  <Mail size={20} />
+                </div>
+
+                <div>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider">
+                    Email
+                  </p>
+                  <p className="text-gray-200">
+                    kelvenbentofontes@gmail.com
+                  </p>
+                </div>
+
+              </div>
+
+              {/* PHONE */}
+              <div className="flex items-start gap-4">
+
+                <div className="text-yellow-400 mt-1">
+                  <Phone size={20} />
+                </div>
+
+                <div>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider">
+                    Phone
+                  </p>
+                  <p className="text-gray-200">
+                    +55 11 95364-7573
+                  </p>
+                </div>
+
+              </div>
+
+              {/* LOCATION */}
+              <div className="flex items-start gap-4">
+
+                <div className="text-yellow-400 mt-1">
+                  <MapPin size={20} />
+                </div>
+
+                <div>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider">
+                    Location
+                  </p>
+                  <p className="text-gray-200">
+                    Osasco, São Paulo, Brasil
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* SOCIAL */}
+            <div className="mt-12 flex gap-6">
 
               <a
-                href="#"
-                className="border border-gray-700 px-4 py-2 rounded hover:border-yellow-400 transition"
+                href="https://linkedin.com"
+                target="_blank"
+                className="p-3 border border-gray-700 rounded-lg text-gray-400 hover:text-yellow-400 hover:border-yellow-400 transition"
               >
-                LinkedIn
+                <Linkedin size={20} />
               </a>
 
               <a
-                href="#"
-                className="border border-gray-700 px-4 py-2 rounded hover:border-yellow-400 transition"
+                href="https://github.com"
+                target="_blank"
+                className="p-3 border border-gray-700 rounded-lg text-gray-400 hover:text-yellow-400 hover:border-yellow-400 transition"
               >
-                GitHub
+                <Github size={20} />
               </a>
 
             </div>
