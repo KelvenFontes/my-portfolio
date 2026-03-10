@@ -1,48 +1,53 @@
-import { useState, useEffect } from "react";
-import { FaArrowUp } from "react-icons/fa";
+"use client"
+
+import { useState, useEffect } from "react"
+import { FaArrowUp } from "react-icons/fa"
 
 export default function BackToTopButton() {
-  const [isVisible, setIsVisible] = useState(false);
 
-  // Detectar o scroll da página e mostrar/ocultar o botão
+  const [isVisible, setIsVisible] = useState(false)
+
   useEffect(() => {
+
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
+      setIsVisible(window.scrollY > 300)
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    return () => window.removeEventListener("scroll", handleScroll)
 
-  // Função para rolar até o topo
+  }, [])
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
-    });
-  };
+      behavior: "smooth"
+    })
+  }
 
   return (
-    isVisible && (
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-8 right-8 p-4 bg-blue-500 text-white rounded-full shadow-lg z-50 hover:bg-blue-600 transition-all"
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          zIndex: 9999, // Garante que o botão fique acima de outros elementos
-        }}
-      >
-        <FaArrowUp size={24} />
-      </button>
-    )
-  );
+
+    <button
+      onClick={scrollToTop}
+      className={`
+        fixed bottom-8 right-8 z-50
+        w-12 h-12
+        flex items-center justify-center
+        rounded-full
+        bg-yellow-400
+        text-black
+        shadow-lg shadow-yellow-400/30
+        hover:scale-110
+        hover:shadow-yellow-400/50
+        transition-all duration-300
+        ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}
+      `}
+    >
+
+      <FaArrowUp size={18} />
+
+    </button>
+
+  )
 }
