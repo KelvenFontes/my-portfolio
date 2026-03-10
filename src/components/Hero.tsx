@@ -75,7 +75,7 @@ export default function Hero() {
           </div>
 
           {/* REDES */}
-          <div className="pb-10  mt-10 flex justify-center md:justify-start">
+          <div className="pb-10  mt-10 flex justify-center">
 
             <div className="flex items-center gap-4 px-6 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
 
