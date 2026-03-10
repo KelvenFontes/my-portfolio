@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Meu Portfólio",
-  description: "Este é o meu portfólio desenvolvido com Next.js e Tailwind CSS",
+  description: "Este é o meu portfólio",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

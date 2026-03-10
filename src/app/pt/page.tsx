@@ -13,7 +13,6 @@ import TechCarousel from "@/components/TechCarousel";
 export default function Home() {
   return (
     <>
-
       <Navbar />
 
       <Hero />

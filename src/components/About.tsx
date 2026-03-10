@@ -32,7 +32,7 @@ export default function About() {
             <div className="w-[280px] h-[280px] md:block absolute md:w-[380px] md:h-[420px] border border-white/10 rounded-xl -translate-x-4 translate-y-4"></div>
 
             <Image
-              src="/assets/perfil.png"
+              src="/assets/aboutus.png"
               alt="Kelven Fontes"
               width={380}
               height={420}
