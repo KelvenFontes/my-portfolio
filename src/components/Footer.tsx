@@ -38,7 +38,7 @@ export default function Footer() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative w-full max-w-full bg-gradient-to-r from-black via-gray-800 to-black text-gray-300 text-center py-12 overflow-hidden z-10"
+      className="relative w-full max-w-full bg-gradient-to-r from-[#0b1b3a] via-[#081225] to-[#0b1b3a] text-gray-300 text-center py-12 overflow-hidden z-10"
     >
       {/* Frase Motivacional */}
       <motion.p
@@ -47,7 +47,7 @@ export default function Footer() {
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
         className="text-lg font-medium text-white mb-6"
       >
-        Criando experiências únicas, uma linha de código por vez.
+        Transformando dados em insights e decisões inteligentes!
       </motion.p>
 
       {/* Links Sociais com Hover Suave */}
