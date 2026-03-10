@@ -26,10 +26,10 @@ export default function About() {
           <div className="relative flex justify-center">
 
             {/* GLOW */}
-            <div className="absolute w-[320px] h-[360px] bg-yellow-400/20 blur-[120px] rounded-full"></div>
+            <div className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[360px] bg-yellow-400/20 blur-[120px] rounded-full"></div>
 
-            {/* CARD ATRÁS */}
-            <div className="absolute w-[380px] h-[420px] border border-white/10 rounded-xl -translate-x-4 translate-y-4"></div>
+            {/* CARD ATRÁS (aparece só no desktop) */}
+            <div className="w-[280px] h-[280px] md:block absolute w-[380px] h-[420px] border border-white/10 rounded-xl -translate-x-4 translate-y-4"></div>
 
             <Image
               src="/assets/perfil.png"
@@ -38,6 +38,8 @@ export default function About() {
               height={420}
               className="
                 relative
+                w-[260px] md:w-[380px]
+                h-auto
                 object-cover
                 rounded-xl
                 border border-white/10
@@ -53,7 +55,7 @@ export default function About() {
           <div>
 
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Hi, I'm <span className="text-yellow-400">Kelven Fontes</span>
+              Hi, I'm Kelven Fontes
             </h3>
 
             <p className="text-yellow-400 font-medium mb-6">
@@ -61,33 +63,36 @@ export default function About() {
             </p>
 
             <p className="text-gray-400 mb-10 leading-relaxed max-w-xl">
-              I am a data analyst passionate about transforming complex data
-              into clear and strategic insights. I work with Python, SQL and
-              Power BI to analyze data, build dashboards and support
-              data-driven decision making that helps businesses grow and
-              optimize their performance.
+              I am a Data Analyst with a background in Software Development and
+              an MBA in Technology for Business focused on Artificial Intelligence,
+              Data Science and Big Data.
+
+              I specialize in transforming complex datasets into actionable insights
+              using Python, SQL and Power BI. My goal is to create analytical
+              solutions and dashboards that help organizations make smarter,
+              data-driven decisions.
             </p>
 
             {/* INFO */}
             <div className="grid grid-cols-2 gap-y-6 text-sm text-gray-300 mb-10">
 
               <div>
-                <span className="text-gray-500 block">Location</span>
+                <span className="text-yellow-400 block">Location</span>
                 Brazil
               </div>
 
               <div>
-                <span className="text-gray-500 block">Languages</span>
+                <span className="text-yellow-400 block">Languages</span>
                 Portuguese, English
               </div>
 
               <div>
-                <span className="text-gray-500 block">Availability</span>
+                <span className="text-yellow-400 block">Availability</span>
                 Open to Work
               </div>
 
               <div>
-                <span className="text-gray-500 block">Focus</span>
+                <span className="text-yellow-400 block">Focus</span>
                 Data Analytics
               </div>
 
@@ -97,7 +102,7 @@ export default function About() {
             <div className="w-full h-px bg-white/10 mb-10"></div>
 
             {/* STATS */}
-            <div className="flex gap-14">
+            <div className="flex justify-between max-w-md">
 
               <div className="text-center">
                 <p className="text-4xl font-bold text-yellow-400">10+</p>
