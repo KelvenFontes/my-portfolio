@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
-export default function Navbar() {
+export default function Navbar({dict}:any) {
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
@@ -29,19 +29,19 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10 text-sm font-medium">
 
           <Link href="#about" className="hover:text-yellow-400 transition">
-            About
+            {dict.navbar.about}
           </Link>
 
           <Link href="#skills" className="hover:text-yellow-400 transition">
-            Skills
+            {dict.navbar.skills}
           </Link>
 
           <Link href="#projects" className="hover:text-yellow-400 transition">
-            Projects
+            {dict.navbar.projects}
           </Link>
 
           <Link href="#contact" className="hover:text-yellow-400 transition">
-            Contact
+            {dict.navbar.contact}
           </Link>
 
         </div>
@@ -77,7 +77,7 @@ export default function Navbar() {
             href="#contact"
             className="hidden md:block bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
-            Let's Talk
+            {dict.navbar.contactButton}
           </Link>
 
           {/* HAMBURGER */}
@@ -101,19 +101,19 @@ export default function Navbar() {
         <div className="flex flex-col items-center gap-5 py-6 bg-[#081225] border-t border-white/10">
 
           <Link href="#about" onClick={() => setMenuOpen(false)}>
-            About
+            {dict.navbar.about}
           </Link>
 
           <Link href="#skills" onClick={() => setMenuOpen(false)}>
-            Skills
+            {dict.navbar.skills}
           </Link>
 
           <Link href="#projects" onClick={() => setMenuOpen(false)}>
-            Projects
+            {dict.navbar.projects}
           </Link>
 
           <Link href="#contact" onClick={() => setMenuOpen(false)}>
-            Contact
+            {dict.navbar.contact}
           </Link>
 
           <span className="w-full h-px bg-white/10"></span>
@@ -137,7 +137,7 @@ export default function Navbar() {
             href="#contact"
             className="bg-yellow-400 text-black px-4 py-2 rounded-full font-semibold hover:scale-105 transition"
           >
-            Let's Talk
+            {dict.navbar.contactButton}
           </Link>
 
         </div>

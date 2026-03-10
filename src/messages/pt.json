@@ -28,5 +28,13 @@
     "projects": "Projetos de Dados",
     "years": "Anos Estudando Dados",
     "dashboards": "Dashboards Criados"
+  },
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "contactButton": "Vamos Conversar!"
   }
 }
