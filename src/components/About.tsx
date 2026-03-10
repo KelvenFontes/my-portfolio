@@ -91,30 +91,6 @@ export default function About({dict}:any) {
 
             </div>
 
-            {/* INFO */}
-            <div className="grid grid-cols-2 gap-y-6 text-sm text-gray-300 mb-10">
-
-              <div>
-                <span className="text-yellow-400 block">Location</span>
-                Brazil
-              </div>
-
-              <div>
-                <span className="text-yellow-400 block">Languages</span>
-                Portuguese, English
-              </div>
-
-              <div>
-                <span className="text-yellow-400 block">Availability</span>
-                Open to Work
-              </div>
-
-              <div>
-                <span className="text-yellow-400 block">Focus</span>
-                Data Analytics
-              </div>
-
-            </div>
 
             {/* DIVIDER */}
             <div className="w-full h-px bg-white/10 mb-10"></div>
