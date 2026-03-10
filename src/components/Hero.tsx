@@ -26,12 +26,11 @@ export default function Hero({ dict }:any) {
           </h1>
 
           <p className="text-xl mt-4 text-yellow-400">
-            Data Analyst
+            {dict.hero.role}
           </p>
 
           <p className="text-gray-400 mt-6 max-w-md">
-            I turn complex data into clear insights that help businesses
-            make smarter decisions and achieve measurable growth.
+            {dict.hero.description}
           </p>
 
           {/* TECNOLOGIAS */}
@@ -62,7 +61,7 @@ export default function Hero({ dict }:any) {
               href="#contact"
               className="sm:text-md sm:py-2 px-4 bg-yellow-400 text-black md:px-7 py-3 rounded-full font-semibold hover:scale-105 hover:shadow-lg hover:shadow-yellow-400/30 transition duration-300"
             >
-              Contact Me
+              {dict.hero.contact}
             </a>
 
             <a

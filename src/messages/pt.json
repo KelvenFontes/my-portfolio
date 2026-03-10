@@ -2,6 +2,8 @@
   "hero": {
     "hello": "Olá, eu sou",
     "role": "Analista de Dados",
-    "description": "Transformo dados em insights."
+    "description": "Transformo dados complexos em insights claros que ajudam empresas a tomar decisões mais inteligentes e crescer com dados.",
+    "contact": "Entrar em Contato",
+    "download": "Baixar CV"
   }
 }
