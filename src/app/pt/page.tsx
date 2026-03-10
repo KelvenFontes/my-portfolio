@@ -21,18 +21,18 @@ export default async function Home() {
 
       <Hero dict={dict}/>
 
-      <About dict={dict}/>
+      {/* <About dict={dict}/> */}
 
-      <Skills />
+      {/* <Skills /> */}
 
-      <TechCarousel />
+      {/* <TechCarousel /> */}
 
-      <Resume />
+      {/* <Resume /> */}
 
-      <Contact />
+      {/* <Contact /> */}
 
-      <Footer />
-      <ScrollToTop />
+      {/* <Footer /> */}
+      {/* <ScrollToTop /> */}
     </>
   );
 }
