@@ -75,38 +75,42 @@ export default function Hero() {
           </div>
 
           {/* REDES */}
-          <div className="flex items-center gap-4 mt-10">
+          <div className="mt-10 flex justify-center md:justify-start">
 
-            <a
-              href="https://www.linkedin.com/in/kelvenfontes/"
-              target="_blank"
-              className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
-            >
-              <FaLinkedin />
-            </a>
+            <div className="flex items-center gap-4 px-6 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
 
-            <a
-              href="https://github.com/KelvenFontes"
-              target="_blank"
-              className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
-            >
-              <FaGithub />
-            </a>
+              <a
+                href="https://www.linkedin.com/in/kelvenfontes/"
+                target="_blank"
+                className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
+              >
+                <FaLinkedin />
+              </a>
 
-            <a
-              href="mailto:kelvenbentofontes@gmail.com"
-              className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
-            >
-              <FaEnvelope />
-            </a>
+              <a
+                href="https://github.com/KelvenFontes"
+                target="_blank"
+                className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
+              >
+                <FaGithub />
+              </a>
 
-            <a
-              href="https://wa.me/+5511953647573"
-              target="_blank"
-              className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
-            >
-              <FaWhatsapp />
-            </a>
+              <a
+                href="mailto:kelvenbentofontes@gmail.com"
+                className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
+              >
+                <FaEnvelope />
+              </a>
+
+              <a
+                href="https://wa.me/+5511953647573"
+                target="_blank"
+                className="w-11 h-11 flex items-center justify-center border border-gray-700 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:bg-yellow-400/10 transition duration-300"
+              >
+                <FaWhatsapp />
+              </a>
+
+            </div>
 
           </div>
 
