@@ -27,11 +27,11 @@ export default async function Home() {
 
       <TechCarousel />
 
-      {/* <Resume /> */}
+      <Resume />
 
-      {/* <Contact /> */}
+      <Contact />
 
-      {/* <Footer /> */}
+      <Footer />
       {/* <ScrollToTop /> */}
     </>
   );
