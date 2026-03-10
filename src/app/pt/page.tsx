@@ -32,7 +32,7 @@ export default async function Home() {
       {/* <Contact /> */}
 
       <Footer />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
     </>
   );
 }
