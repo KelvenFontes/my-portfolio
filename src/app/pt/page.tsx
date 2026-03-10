@@ -23,7 +23,7 @@ export default async function Home() {
 
       <About dict={dict}/>
 
-      {/* <Skills /> */}
+      <Skills />
 
       {/* <TechCarousel /> */}
 
