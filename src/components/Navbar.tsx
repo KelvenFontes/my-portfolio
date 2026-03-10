@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
-export default function Navbar({dict}:any) {
+export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
@@ -29,19 +29,19 @@ export default function Navbar({dict}:any) {
         <div className="hidden md:flex items-center gap-10 text-sm font-medium">
 
           <Link href="#about" className="hover:text-yellow-400 transition">
-            {dict.navbar.about}
+            dict.navbar.about
           </Link>
 
           <Link href="#skills" className="hover:text-yellow-400 transition">
-            {dict.navbar.skills}
+            dict.navbar.skills
           </Link>
 
           <Link href="#projects" className="hover:text-yellow-400 transition">
-            {dict.navbar.projects}
+            dict.navbar.projects
           </Link>
 
           <Link href="#contact" className="hover:text-yellow-400 transition">
-            {dict.navbar.contact}
+            dict.navbar.contact
           </Link>
 
         </div>
@@ -77,7 +77,7 @@ export default function Navbar({dict}:any) {
             href="#contact"
             className="hidden md:block bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold hover:scale-105 transition"
           >
-            {dict.navbar.contactButton}
+            dict.navbar.contactButton
           </Link>
 
           {/* HAMBURGER */}
@@ -101,19 +101,19 @@ export default function Navbar({dict}:any) {
         <div className="flex flex-col items-center gap-5 py-6 bg-[#081225] border-t border-white/10">
 
           <Link href="#about" onClick={() => setMenuOpen(false)}>
-            {dict.navbar.about}
+            dict.navbar.about
           </Link>
 
           <Link href="#skills" onClick={() => setMenuOpen(false)}>
-            {dict.navbar.skills}
+            dict.navbar.skills
           </Link>
 
           <Link href="#projects" onClick={() => setMenuOpen(false)}>
-            {dict.navbar.projects}
+            dict.navbar.projects
           </Link>
 
           <Link href="#contact" onClick={() => setMenuOpen(false)}>
-            {dict.navbar.contact}
+            dict.navbar.contact
           </Link>
 
           <span className="w-full h-px bg-white/10"></span>
@@ -137,7 +137,7 @@ export default function Navbar({dict}:any) {
             href="#contact"
             className="bg-yellow-400 text-black px-4 py-2 rounded-full font-semibold hover:scale-105 transition"
           >
-            {dict.navbar.contactButton}
+            dict.navbar.contactButton
           </Link>
 
         </div>

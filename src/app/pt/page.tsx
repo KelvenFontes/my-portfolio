@@ -17,7 +17,7 @@ export default async function Home() {
 
   return (
     <>
-      <Navbar dict={dict}/>
+      <Navbar />
 
       <Hero dict={dict}/>
 
