@@ -29,7 +29,7 @@ export default function About() {
             <div className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[360px] bg-yellow-400/20 blur-[120px] rounded-full"></div>
 
             {/* CARD ATRÁS (aparece só no desktop) */}
-            <div className="w-[280px] h-[280px] md:block absolute w-[380px] h-[420px] border border-white/10 rounded-xl -translate-x-4 translate-y-4"></div>
+            <div className="w-[280px] h-[280px] md:block absolute md:w-[380px] md:h-[420px] border border-white/10 rounded-xl -translate-x-4 translate-y-4"></div>
 
             <Image
               src="/assets/perfil.png"
