@@ -25,7 +25,7 @@ export default async function Home() {
 
       <Skills />
 
-      {/* <TechCarousel /> */}
+      <TechCarousel />
 
       {/* <Resume /> */}
 
