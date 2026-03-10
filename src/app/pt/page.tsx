@@ -29,7 +29,7 @@ export default async function Home() {
 
       <Resume />
 
-      {/* <Contact /> */}
+      <Contact />
 
       <Footer />
       <ScrollToTop />
