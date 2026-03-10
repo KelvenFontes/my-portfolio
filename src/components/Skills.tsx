@@ -1,3 +1,5 @@
+"use client"
+
 export default function Skills() {
 
   const skills = [
@@ -11,40 +13,60 @@ export default function Skills() {
 
   return (
     <section
-      id="habilidades"
+      id="skills"
       className="bg-[#081225] text-white py-28 px-6"
     >
       <div className="max-w-5xl mx-auto">
 
-        {/* TÍTULO */}
-        <p className="text-yellow-400 font-semibold mb-2">
-          MY SKILLS
-        </p>
+        {/* HEADER */}
+        <div className="text-center mb-20 relative">
 
-        <h2 className="text-3xl font-bold mb-14">
-          Habilidades em Análise de Dados
-        </h2>
+          <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04] tracking-widest">
+            SKILLS
+          </h2>
+
+          <p className="text-yellow-400 font-semibold tracking-widest relative">
+            MY SKILLS
+          </p>
+
+          <div className="w-16 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
+
+        </div>
 
         {/* SKILLS */}
-        <div className="space-y-8">
+        <div className="space-y-12">
 
           {skills.map((skill, index) => (
 
             <div key={index}>
 
-              {/* TITULO + PORCENTAGEM */}
-              <div className="flex justify-between mb-2 text-sm">
-                <span>{skill.name}</span>
-                <span>{skill.level}%</span>
-              </div>
+              {/* NOME */}
+              <p className="text-gray-200 mb-4">
+                {skill.name}
+              </p>
 
               {/* BARRA */}
-              <div className="w-full h-[3px] bg-gray-700">
+              <div className="relative w-full h-[4px] bg-white/10 rounded-full">
 
+                {/* PROGRESSO */}
                 <div
-                  className="h-[3px] bg-yellow-400 transition-all duration-700"
+                  className="absolute h-[4px] bg-yellow-400 rounded-full"
                   style={{ width: `${skill.level}%` }}
                 />
+
+                {/* INDICADOR */}
+                <div
+                  className="absolute top-1/2 w-3 h-3 bg-yellow-400 rounded-full -translate-y-1/2"
+                  style={{ left: `${skill.level}%`, transform: "translate(-50%, -50%)" }}
+                />
+
+                {/* PORCENTAGEM */}
+                <span
+                  className="absolute -top-7 text-sm text-yellow-400 font-medium"
+                  style={{ left: `${skill.level}%`, transform: "translateX(-50%)" }}
+                >
+                  {skill.level}%
+                </span>
 
               </div>
 

@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import Resume from "@/components/Resume";
 import ScrollToTop from "@/components/ScrollToTop";
 import Skills from "@/components/Skills";
+import TechCarousel from "@/components/TechCarousel";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
       <About />
 
       <Skills />
+
+      <TechCarousel />
 
       <Resume />
 
