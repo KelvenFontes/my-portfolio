@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function About() {
+export default function About({dict}:any) {
   return (
     <section id="about" className="bg-[#081225] text-white py-28 px-6">
       <div className="max-w-7xl mx-auto">
@@ -9,11 +9,11 @@ export default function About() {
         <div className="text-center mb-20 relative">
 
           <h2 className="absolute inset-0 flex justify-center text-6xl md:text-7xl font-bold text-white/5 tracking-widest">
-            ABOUT
+            {dict.about.title}
           </h2>
 
           <p className="text-yellow-400 font-semibold tracking-widest relative">
-            ABOUT ME
+            {dict.about.subtitle}
           </p>
 
           <div className="w-16 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
@@ -55,23 +55,41 @@ export default function About() {
           <div>
 
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Hi, I'm Kelven Fontes
+              {dict.about.name}
             </h3>
 
             <p className="text-yellow-400 font-medium mb-6">
-              Data Analyst
+              {dict.about.role}
             </p>
 
             <p className="text-gray-400 mb-10 leading-relaxed max-w-xl">
-              I am a Data Analyst with a background in Software Development and
-              an MBA in Technology for Business focused on Artificial Intelligence,
-              Data Science and Big Data.
-
-              I specialize in transforming complex datasets into actionable insights
-              using Python, SQL and Power BI. My goal is to create analytical
-              solutions and dashboards that help organizations make smarter,
-              data-driven decisions.
+              {dict.about.description}
             </p>
+
+            {/* INFO */}
+            <div className="grid grid-cols-2 gap-y-6 text-sm text-gray-300 mb-10">
+
+              <div>
+                <span className="text-yellow-400 block">{dict.about.location}</span>
+                {dict.about.locationValue}
+              </div>
+
+              <div>
+                <span className="text-yellow-400 block">{dict.about.languages}</span>
+                {dict.about.languagesValue}
+              </div>
+
+              <div>
+                <span className="text-yellow-400 block">{dict.about.availability}</span>
+                {dict.about.availabilityValue}
+              </div>
+
+              <div>
+                <span className="text-yellow-400 block">{dict.about.focus}</span>
+                {dict.about.focusValue}
+              </div>
+
+            </div>
 
             {/* INFO */}
             <div className="grid grid-cols-2 gap-y-6 text-sm text-gray-300 mb-10">

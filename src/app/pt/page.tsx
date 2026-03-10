@@ -21,7 +21,7 @@ export default async function Home() {
 
       <Hero dict={dict}/>
 
-      <About />
+      <About dict={dict}/>
 
       <Skills />
 
