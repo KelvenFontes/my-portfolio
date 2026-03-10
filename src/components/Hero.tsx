@@ -7,7 +7,7 @@ import { BsDownload } from "react-icons/bs"
 
 export default function Hero({ dict }:any) {
   return (
-    <section className="min-h-screen flex items-center text-white bg-gradient-to-br from-[#081225] via-[#0d1a35] to-[#020617] px-6 pt-28">
+    <section className="min-h-screen flex items-center text-white bg-gradient-to-br from-[#081225] via-[#0d1a35] to-[#020617] px-6 pt-28 overflow-hidden">
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
