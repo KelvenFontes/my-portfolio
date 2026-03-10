@@ -1,4 +1,12 @@
 {
+    "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "contactButton": "Let's Talk"
+  },
   "hero": {
     "hello": "Hello, I'm",
     "role": "Data Analyst",
@@ -28,13 +36,5 @@
     "projects": "Data Projects",
     "years": "Years Learning Data",
     "dashboards": "Dashboards Built"
-  },
-  "navbar": {
-    "home": "Home",
-    "about": "About",
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact",
-    "contactButton": "Let's Talk"
   }
 }

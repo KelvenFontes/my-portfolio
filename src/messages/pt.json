@@ -1,34 +1,4 @@
 {
-  "hero": {
-    "hello": "Olá, eu sou",
-    "role": "Analista de Dados",
-    "description": "Transformo dados complexos em insights claros que ajudam empresas a tomar decisões mais inteligentes e crescer com dados.",
-    "contact": "Entrar em Contato",
-    "download": "Baixar CV"
-  },
-   "about": {
-    "title": "SOBRE",
-    "subtitle": "SOBRE MIM",
-
-    "name": "Olá, eu sou Kelven Fontes",
-    "role": "Analista de Dados",
-
-    "description": "Sou Analista de Dados com formação em Desenvolvimento de Software e MBA em Tecnologia para Negócios com foco em Inteligência Artificial, Data Science e Big Data. Sou especializado em transformar conjuntos de dados complexos em insights acionáveis utilizando Python, SQL e Power BI. Meu objetivo é criar soluções analíticas e dashboards que ajudem organizações a tomar decisões mais inteligentes baseadas em dados.",
-
-    "location": "Localização",
-    "languages": "Idiomas",
-    "availability": "Disponibilidade",
-    "focus": "Foco",
-
-    "locationValue": "Brasil",
-    "languagesValue": "Português, Inglês",
-    "availabilityValue": "Aberto a Oportunidades",
-    "focusValue": "Análise de Dados",
-
-    "projects": "Projetos de Dados",
-    "years": "Anos Estudando Dados",
-    "dashboards": "Dashboards Criados"
-  },
   "navbar": {
     "home": "Início",
     "about": "Sobre",
@@ -36,5 +6,30 @@
     "projects": "Projetos",
     "contact": "Contato",
     "contactButton": "Vamos Conversar!"
+  },
+  "hero": {
+    "hello": "Olá, eu sou",
+    "role": "Analista de Dados",
+    "description": "Transformo dados complexos em insights claros que ajudam empresas a tomar decisões mais inteligentes e crescer com dados.",
+    "contact": "Entrar em Contato",
+    "download": "Baixar CV"
+  },
+  "about": {
+    "title": "SOBRE",
+    "subtitle": "SOBRE MIM",
+    "name": "Olá, eu sou Kelven Fontes",
+    "role": "Analista de Dados",
+    "description": "Sou Analista de Dados com formação em Desenvolvimento de Software e MBA em Tecnologia para Negócios com foco em Inteligência Artificial, Data Science e Big Data. Sou especializado em transformar conjuntos de dados complexos em insights acionáveis utilizando Python, SQL e Power BI. Meu objetivo é criar soluções analíticas e dashboards que ajudem organizações a tomar decisões mais inteligentes baseadas em dados.",
+    "location": "Localização",
+    "languages": "Idiomas",
+    "availability": "Disponibilidade",
+    "focus": "Foco",
+    "locationValue": "Brasil",
+    "languagesValue": "Português, Inglês",
+    "availabilityValue": "Aberto a Oportunidades",
+    "focusValue": "Análise de Dados",
+    "projects": "Projetos de Dados",
+    "years": "Anos Estudando Dados",
+    "dashboards": "Dashboards Criados"
   }
 }
