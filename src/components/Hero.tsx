@@ -34,7 +34,7 @@ export default function Hero() {
           </p>
 
           {/* TECNOLOGIAS */}
-          <div className="flex gap-3 mt-6 flex-wrap">
+          <div className="flex justify-center gap-3 mt-6 flex-wrap">
 
             <span className="bg-[#0d1a35] px-4 py-1 rounded-full text-sm border border-gray-700">
               Python
@@ -55,18 +55,18 @@ export default function Hero() {
           </div>
 
           {/* BOTÕES */}
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex justify-center gap-4 mt-8">
 
             <a
               href="#contact"
-              className="bg-yellow-400 text-black px-7 py-3 rounded-full font-semibold hover:scale-105 hover:shadow-lg hover:shadow-yellow-400/30 transition duration-300"
+              className="sm:text-md sm:py-2 px-4 bg-yellow-400 text-black md:px-7 py-3 rounded-full font-semibold hover:scale-105 hover:shadow-lg hover:shadow-yellow-400/30 transition duration-300"
             >
               Contact Me
             </a>
 
             <a
               href="/assets/kelven-cv.pdf"
-              className="flex items-center gap-2 border border-gray-700 px-7 py-3 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:scale-105 transition duration-300"
+              className="flex sm:text-md sm:py-2 px-4 items-center gap-2 border border-gray-700 md:px-7 py-3 rounded-full hover:border-yellow-400 hover:text-yellow-400 hover:scale-105 transition duration-300"
             >
               <BsDownload />
               Download CV
