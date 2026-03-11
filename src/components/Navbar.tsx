@@ -5,7 +5,7 @@ import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 
-export default function Navbar() {
+export default function Navbar({ dict }: { dict: any }) {
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-10 text-sm font-medium">
 
           <Link href="#about" className="hover:text-yellow-400 transition">
-            dict.navbar.about
+            {dict.navbar.about}
           </Link>
 
           <Link href="#skills" className="hover:text-yellow-400 transition">
