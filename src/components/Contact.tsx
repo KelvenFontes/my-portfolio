@@ -11,9 +11,9 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto">
 
         {/* HEADER */}
-        <div className="text-center mb-20 relative overflow-hidden">
+        <div className="text-center mb-20 relative">
 
-          <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04] tracking-widest">
+          <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04]">
             CONTACT
           </h2>
 
