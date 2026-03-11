@@ -10,7 +10,7 @@ export default function Navbar({ dict }: { dict: any }) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-[#081225]/80 backdrop-blur border-b border-white/10">
+    <div className="w-full fixed top-0 left-0 z-50 bg-[#081225]/80 backdrop-blur border-b border-white/10">
 
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
@@ -29,7 +29,7 @@ export default function Navbar({ dict }: { dict: any }) {
         <div className="hidden md:flex items-center gap-10 text-sm font-medium">
 
           <Link href="#about" className="hover:text-yellow-400 transition">
-            {dict.navbar.about}
+            {dict.default.navbar.about}
           </Link>
 
           <Link href="#skills" className="hover:text-yellow-400 transition">
@@ -143,6 +143,6 @@ export default function Navbar({ dict }: { dict: any }) {
         </div>
       </div>
 
-    </nav>
+    </div>
   )
 }

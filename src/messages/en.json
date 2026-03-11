@@ -1,5 +1,5 @@
 {
-    "navbar": {
+  "navbar": {
     "home": "Home",
     "about": "About",
     "skills": "Skills",
@@ -14,25 +14,20 @@
     "contact": "Contact Me",
     "download": "Download CV"
   },
-   "about": {
+  "about": {
     "title": "ABOUT",
     "subtitle": "ABOUT ME",
-
     "name": "Hi, I'm Kelven Fontes",
     "role": "Data Analyst",
-
     "description": "I am a Data Analyst with a background in Software Development and an MBA in Technology for Business focused on Artificial Intelligence, Data Science and Big Data. I specialize in transforming complex datasets into actionable insights using Python, SQL and Power BI. My goal is to create analytical solutions and dashboards that help organizations make smarter, data-driven decisions.",
-
     "location": "Location",
     "languages": "Languages",
     "availability": "Availability",
     "focus": "Focus",
-
     "locationValue": "Brazil",
     "languagesValue": "Portuguese, English",
     "availabilityValue": "Open to Work",
     "focusValue": "Data Analytics",
-
     "projects": "Data Projects",
     "years": "Years Learning Data",
     "dashboards": "Dashboards Built"
