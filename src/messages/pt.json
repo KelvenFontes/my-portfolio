@@ -1,12 +1,4 @@
 {
-  "navbar": {
-    "home": "Início",
-    "about": "Sobre",
-    "skills": "Habilidades",
-    "projects": "Projetos",
-    "contact": "Contato",
-    "contactButton": "Vamos Conversar!"
-  },
   "hero": {
     "hello": "Olá, eu sou",
     "role": "Analista de Dados",

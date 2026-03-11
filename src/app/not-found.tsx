@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import SafeLottie from '@/components/SafeLottie'; // Componente corrigido para evitar SSR
-import Navbar from '@/components/Navbar'; // Adicionando a Navbar
+import NavbarEn from '@/components/NavbarEn'; // Adicionando a Navbar
 import animationData from '../../public/lotties/404-animation.json'; // Caminho correto
 import Link from 'next/link'; // Para adicionar um botão de volta
 
@@ -27,7 +27,7 @@ export default function Custom404() {
   return (
     <div className={'w-screen h-screen flex flex-col transition-colors duration-300'}>
       {/* Navbar no topo */}
-      <Navbar />
+      <NavbarEn />
 
       {/* Conteúdo da página 404 */}
       <div className="flex-grow flex items-center justify-center">
