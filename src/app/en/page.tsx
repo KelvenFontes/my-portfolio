@@ -11,6 +11,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Skills from "@/components/Skills";
 import TechCarousel from "@/components/TechCarousel";
 import NavbarEn from "@/components/NavbarEn";
+import PowerBISection from "@/components/PowerBISection";
 
 export default async function Home() {
 
@@ -23,6 +24,8 @@ export default async function Home() {
       <Hero dict={dict}/>
 
       <About dict={dict}/>
+
+      <PowerBISection />
 
       <Skills />
 
