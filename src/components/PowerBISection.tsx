@@ -30,42 +30,55 @@ export default function PowerBISection() {
   return (
     <section
       id="powerbi"
-      className="w-full py-28 bg-gradient-to-b from-zinc-950 to-zinc-900"
+      className="relative w-full py-28 px-6 overflow-hidden bg-gradient-to-br from-[#081225] via-[#0d1a35] to-[#020617]"
     >
-      <div className="max-w-6xl mx-auto px-6">
+      {/* glow sutil */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-24 left-1/2 -translate-x-1/2 w-[420px] h-[420px] bg-yellow-400/10 blur-[140px] rounded-full" />
+      </div>
 
-        {/* HEADER IGUAL AO SOBRE */}
-        <div className="text-center mb-20">
-          <p className="text-yellow-400 font-semibold tracking-widest mb-2">
-            PORTFÓLIO
-          </p>
+      <div className="relative max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+         {/* Dashboard */}
+        <div className="text-center mb-20 relative">
 
-          <h2 className="text-4xl md:text-5xl font-bold text-white">
-            Dashboards Power BI
+          <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04] tracking-widest">
+            DASHBOARD
           </h2>
 
-          <p className="text-zinc-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-yellow-400 font-semibold tracking-widest relative">
+            DASHBOARD
+          </p>
+
+          <div className="w-16 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
+        </div>
+
+          <p className="text-gray-200 mt-6 max-w-2xl mx-auto">
             Projetos desenvolvidos com foco em análise de dados, visualização
             estratégica e geração de insights acionáveis.
           </p>
         </div>
 
-        {/* CONTAINER ESTILO CARD (igual outras seções) */}
-        <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 md:p-12 backdrop-blur-sm shadow-lg">
-
-          <div className="grid md:grid-cols-2 gap-10">
+        <div className="rounded-3xl border border-white/10 bg-white/[0.04] backdrop-blur-md p-6 md:p-10 shadow-[0_0_50px_rgba(0,0,0,0.25)]">
+          <div className="grid md:grid-cols-2 gap-8">
             {dashboards.map((dashboard, index) => (
-              <PowerBICard
+              <div
                 key={index}
-                title={dashboard.title}
-                description={dashboard.description}
-                embedUrl={dashboard.embedUrl}
-              />
+                className={dashboards.length % 2 !== 0 && index === dashboards.length - 1
+                  ? "md:col-span-2 md:flex md:justify-center"
+                  : ""}
+              >
+                <div className={dashboards.length % 2 !== 0 && index === dashboards.length - 1 ? "md:w-[48%]" : ""}>
+                  <PowerBICard
+                    title={dashboard.title}
+                    description={dashboard.description}
+                    embedUrl={dashboard.embedUrl}
+                  />
+                </div>
+              </div>
             ))}
           </div>
-
         </div>
-
       </div>
     </section>
   );
