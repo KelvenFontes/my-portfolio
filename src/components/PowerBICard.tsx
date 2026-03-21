@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface PowerBICardProps {
   title: string;
   description: string;
@@ -17,13 +19,22 @@ export default function PowerBICard({
 
       <p className="text-zinc-400 mb-6">{description}</p>
 
-      <div className="relative w-full pb-[56.25%]">
+      <div className="relative w-full pb-[56.25%] mb-4">
         <iframe
           className="absolute top-0 left-0 w-full h-full rounded-lg"
           src={embedUrl}
           allowFullScreen
         />
       </div>
+
+      <Link
+        href={embedUrl}
+        target="_blank"
+        className="w-full flex items-center justify-center bg-yellow-400 text-black px-4 py-3 rounded-lg text-sm font-semibold hover:bg-yellow-300 transition-colors"
+      >
+        Ver no Power BI
+      </Link>
+
     </div>
   );
 }

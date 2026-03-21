@@ -5,39 +5,65 @@ import PowerBICard from "./PowerBICard";
 const dashboards = [
   {
     title: "Dashboard Uber – Análise de Corridas",
-    description: "Dashboard em Power BI com análise de corridas, receita e avaliações.",
-    embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
+    description:
+      "Dashboard em Power BI com análise de corridas, receita e avaliações.",
+    embedUrl:
+      "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
+  },
+  {
+    title: "Dashboard Uber – Análise de Corridas",
+    description:
+      "Dashboard em Power BI com análise de corridas, receita e avaliações.",
+    embedUrl:
+      "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
+  },
+  {
+    title: "Dashboard Uber – Análise de Corridas",
+    description:
+      "Dashboard em Power BI com análise de corridas, receita e avaliações.",
+    embedUrl:
+      "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
   }
-  // {
-  //   title: "Dashboard Financeiro",
-  //   description: "Controle de receita, despesas e lucro.",
-  //   embedUrl: "LINK_POWERBI_2",
-  // },
-  // {
-  //   title: "Dashboard Logístico",
-  //   description: "Análise de entregas e performance logística.",
-  //   embedUrl: "LINK_POWERBI_3",
-  // },
 ];
 
 export default function PowerBISection() {
   return (
-    <section id="powerbi" className="w-full py-24 bg-zinc-950">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="powerbi"
+      className="w-full py-28 bg-gradient-to-b from-zinc-950 to-zinc-900"
+    >
+      <div className="max-w-6xl mx-auto px-6">
 
-        <h2 className="text-4xl font-bold text-white text-center mb-16">
-          Dashboards Power BI
-        </h2>
+        {/* HEADER IGUAL AO SOBRE */}
+        <div className="text-center mb-20">
+          <p className="text-yellow-400 font-semibold tracking-widest mb-2">
+            PORTFÓLIO
+          </p>
 
-        <div className="grid md:grid-cols-2 gap-10">
-          {dashboards.map((dashboard, index) => (
-            <PowerBICard
-              key={index}
-              title={dashboard.title}
-              description={dashboard.description}
-              embedUrl={dashboard.embedUrl}
-            />
-          ))}
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Dashboards Power BI
+          </h2>
+
+          <p className="text-zinc-400 mt-4 max-w-2xl mx-auto">
+            Projetos desenvolvidos com foco em análise de dados, visualização
+            estratégica e geração de insights acionáveis.
+          </p>
+        </div>
+
+        {/* CONTAINER ESTILO CARD (igual outras seções) */}
+        <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 md:p-12 backdrop-blur-sm shadow-lg">
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {dashboards.map((dashboard, index) => (
+              <PowerBICard
+                key={index}
+                title={dashboard.title}
+                description={dashboard.description}
+                embedUrl={dashboard.embedUrl}
+              />
+            ))}
+          </div>
+
         </div>
 
       </div>
