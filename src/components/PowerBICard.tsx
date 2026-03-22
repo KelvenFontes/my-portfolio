@@ -6,12 +6,14 @@ interface PowerBICardProps {
   title: string;
   description: string;
   embedUrl: string;
+  buttonText: string;
 }
 
 export default function PowerBICard({
   title,
   description,
   embedUrl,
+  buttonText,
 }: PowerBICardProps) {
   return (
     <div className="group relative w-full rounded-2xl p-[1px] overflow-hidden">
@@ -35,7 +37,7 @@ export default function PowerBICard({
           target="_blank"
           className="w-full flex items-center justify-center bg-yellow-400 text-black px-4 py-3 rounded-lg text-sm font-semibold hover:bg-yellow-500 transition-colors"
         >
-          Ver no Power BI
+          {buttonText}
         </Link>
       </div>
     </div>

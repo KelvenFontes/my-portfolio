@@ -1,32 +1,30 @@
 "use client";
 
+import Link from "next/link";
 import PowerBICard from "./PowerBICard";
 
-const dashboards = [
-  {
-    title: "Dashboard Uber – Análise de Corridas",
-    description:
-      "Dashboard em Power BI com análise de corridas, receita e avaliações.",
-    embedUrl:
-      "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
-  },
-  {
-    title: "Dashboard Uber – Análise de Corridas",
-    description:
-      "Dashboard em Power BI com análise de corridas, receita e avaliações.",
-    embedUrl:
-      "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
-  },
-  {
-    title: "Dashboard Uber – Análise de Corridas",
-    description:
-      "Dashboard em Power BI com análise de corridas, receita e avaliações.",
-    embedUrl:
-      "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
-  }
-];
+export default function PowerBISection({ dict }: { dict: any }) {
+  const dashboards = [
+    {
+      title: dict.Dashboard.titleShort1,
+      description: dict.Dashboard.descriptionShort1,
+      embedUrl:
+        "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
+    },
+    {
+      title: dict.Dashboard.titleShort1,
+      description: dict.Dashboard.descriptionShort1,
+      embedUrl:
+        "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
+    },
+    {
+      title: dict.Dashboard.titleShort1,
+      description: dict.Dashboard.descriptionShort1,
+      embedUrl:
+        "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
+    }
+  ];
 
-export default function PowerBISection() {
   return (
     <section
       id="powerbi"
@@ -39,23 +37,22 @@ export default function PowerBISection() {
 
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center mb-16">
-         {/* Dashboard */}
-        <div className="text-center mb-20 relative">
+          {/* Dashboard */}
+          <div className="text-center mb-20 relative">
 
-          <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04] tracking-widest">
-            DASHBOARD
-          </h2>
+            <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04] tracking-widest">
+              {dict.Dashboard.title}
+            </h2>
 
-          <p className="text-yellow-400 font-semibold tracking-widest relative">
-            DASHBOARD
-          </p>
+            <p className="text-yellow-400 font-semibold tracking-widest relative">
+              {dict.Dashboard.subtitle}
+            </p>
 
-          <div className="w-16 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
-        </div>
+            <div className="w-16 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
+          </div>
 
           <p className="text-gray-200 mt-6 max-w-2xl mx-auto">
-            Projetos desenvolvidos com foco em análise de dados, visualização
-            estratégica e geração de insights acionáveis.
+            {dict.Dashboard.description}
           </p>
         </div>
 
@@ -73,11 +70,13 @@ export default function PowerBISection() {
                     title={dashboard.title}
                     description={dashboard.description}
                     embedUrl={dashboard.embedUrl}
+                    buttonText={dict.Dashboard.button}
                   />
                 </div>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

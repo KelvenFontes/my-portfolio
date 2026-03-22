@@ -23,5 +23,14 @@
     "projects": "Projetos de Dados",
     "years": "Anos Estudando Dados",
     "dashboards": "Dashboards Criados"
+  },
+  "Dashboard": {
+    "title": "DASHBOARD",
+    "subtitle": "MEUS DASHBOARDS",
+    "description": "Explore meus dashboards interativos criados com Power BI, que transformam dados complexos em insights visuais claros e acionáveis. Cada dashboard é projetado para ajudar empresas a tomar decisões informadas e estratégicas com base em dados reais.",
+    "button": "Ver no Power BI",
+    "titleShort1": "Dashboard Uber – Análise de Corridas",
+    "descriptionShort1": "Dashboard em Power BI com análise de corridas, receita e avaliações."
+
   }
 }

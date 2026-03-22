@@ -23,5 +23,13 @@
     "projects": "Data Projects",
     "years": "Years Learning Data",
     "dashboards": "Dashboards Built"
+  },
+  "Dashboard": {
+    "title": "DASHBOARD",
+    "subtitle": "MY DASHBOARDS",
+    "description": "Explore my interactive dashboards created with Power BI, which transform complex data into clear, actionable visual insights. Each dashboard is designed to help businesses make informed, strategic decisions based on real data.",
+    "button": "View on Power BI",
+    "titleShort1": "Uber Dashboard – Ride Analysis",
+    "descriptionShort1": "Power BI dashboard with ride, revenue and rating analysis."
   }
 }
