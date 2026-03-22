@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function About({dict}:any) {
+export default function About({ dict }: any) {
   return (
     <section id="about" className="bg-[#081225] text-white py-28 px-6">
       <div className="max-w-7xl mx-auto">
@@ -54,63 +54,67 @@ export default function About({dict}:any) {
           {/* TEXTO */}
           <div>
 
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              {dict.about.name}
-            </h3>
+            <div>
 
-            <p className="text-yellow-400 font-medium mb-6">
-              {dict.about.role}
-            </p>
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">
+                {dict.about.name}
+              </h3>
 
-            <p className="text-gray-400 mb-10 leading-relaxed max-w-xl">
-              {dict.about.description}
-            </p>
+              <p className="text-yellow-400 font-medium mb-6">
+                {dict.about.role}
+              </p>
 
-            {/* INFO */}
-            <div className="grid grid-cols-2 gap-y-6 text-sm text-gray-300 mb-10">
+              <p className="text-gray-400 mb-10 leading-relaxed max-w-xl">
+                {dict.about.description}
+              </p>
 
-              <div>
-                <span className="text-yellow-400 block">{dict.about.location}</span>
-                {dict.about.locationValue}
+              {/* INFO */}
+              <div className="grid grid-cols-2 gap-y-6 text-sm text-gray-300 mb-10">
+
+                <div>
+                  <span className="text-yellow-400 block">{dict.about.location}</span>
+                  {dict.about.locationValue}
+                </div>
+
+                <div>
+                  <span className="text-yellow-400 block">{dict.about.languages}</span>
+                  {dict.about.languagesValue}
+                </div>
+
+                <div>
+                  <span className="text-yellow-400 block">{dict.about.availability}</span>
+                  {dict.about.availabilityValue}
+                </div>
+
+                <div>
+                  <span className="text-yellow-400 block">{dict.about.focus}</span>
+                  {dict.about.focusValue}
+                </div>
+
               </div>
 
-              <div>
-                <span className="text-yellow-400 block">{dict.about.languages}</span>
-                {dict.about.languagesValue}
-              </div>
 
-              <div>
-                <span className="text-yellow-400 block">{dict.about.availability}</span>
-                {dict.about.availabilityValue}
-              </div>
-
-              <div>
-                <span className="text-yellow-400 block">{dict.about.focus}</span>
-                {dict.about.focusValue}
-              </div>
+              {/* DIVIDER */}
+              <div className="w-full h-px bg-white/10 mb-10"></div>
 
             </div>
 
-
-            {/* DIVIDER */}
-            <div className="w-full h-px bg-white/10 mb-10"></div>
-
             {/* STATS */}
-            <div className="flex justify-between max-w-md">
+            <div className="flex justify-between gap-6 max-w-md">
 
               <div className="text-center">
                 <p className="text-4xl font-bold text-yellow-400">10+</p>
-                <p className="text-gray-400 text-sm">Data Projects</p>
+                <p className="text-gray-400 text-sm">{dict.about.projects}</p>
               </div>
 
               <div className="text-center">
-                <p className="text-4xl font-bold text-yellow-400">2+</p>
-                <p className="text-gray-400 text-sm">Years Learning Data</p>
+                <p className="text-4xl font-bold text-yellow-400">3+</p>
+                <p className="text-gray-400 text-sm">{dict.about.years}</p>
               </div>
 
               <div className="text-center">
                 <p className="text-4xl font-bold text-yellow-400">15+</p>
-                <p className="text-gray-400 text-sm">Dashboards Built</p>
+                <p className="text-gray-400 text-sm">{dict.about.dashboards}</p>
               </div>
 
             </div>
