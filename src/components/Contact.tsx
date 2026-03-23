@@ -81,7 +81,6 @@ export default function Contact({ dict }: any) {
 
               {/* EMAIL */}
               <div className="flex items-start gap-4">
-
                 <div className="text-yellow-400 mt-1">
                   <Mail size={20} />
                 </div>
@@ -90,16 +89,17 @@ export default function Contact({ dict }: any) {
                   <p className="text-xs text-gray-500 uppercase tracking-wider">
                     Email
                   </p>
-                  <p className="text-gray-200">
+                  <a
+                    href="mailto:kelvenbentofontes@gmail.com"
+                    className="text-gray-200 hover:text-yellow-400 transition-colors"
+                  >
                     kelvenbentofontes@gmail.com
-                  </p>
+                  </a>
                 </div>
-
               </div>
 
               {/* PHONE */}
               <div className="flex items-start gap-4">
-
                 <div className="text-yellow-400 mt-1">
                   <Phone size={20} />
                 </div>
@@ -108,11 +108,15 @@ export default function Contact({ dict }: any) {
                   <p className="text-xs text-gray-500 uppercase tracking-wider">
                     {dict.contact.phone}
                   </p>
-                  <p className="text-gray-200">
+                  <a
+                    href="https://wa.me/5511953647573"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-200 hover:text-yellow-400 transition-colors"
+                  >
                     +55 11 95364-7573
-                  </p>
+                  </a>
                 </div>
-
               </div>
 
               {/* LOCATION */}
