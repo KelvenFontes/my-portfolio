@@ -10,6 +10,8 @@ export default function Skills() {
     { name: "Data Lakes & Warehousing", level: 82 },
     { name: "ETL / ELT Pipelines", level: 84 },
     { name: "Machine Learning", level: 60 },
+    { name: "CI/CD", level: 80 },
+    { name: "Git & Github", level: 98 }
   ];
 
   return (
