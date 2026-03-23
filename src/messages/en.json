@@ -31,5 +31,21 @@
     "button": "View on Power BI",
     "titleShort1": "Uber Dashboard – Ride Analysis",
     "descriptionShort1": "Power BI dashboard with ride, revenue and rating analysis."
+  },
+  "contact": {
+    "title": "CONTACT",
+    "subtitle": "CONTACT ME",
+    "justhello": "Just say",
+    "hello": "Hello",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "infoTitle": "Contact Information",
+    "phone": "Phone",
+    "description": "I'm always open to new opportunities and connections. If you'd like to discuss a project, collaborate, or just say hello, feel free to reach out to me. I look forward to hearing from you!",
+    "button": "Send Message"
   }
 }
