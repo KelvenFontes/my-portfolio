@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import PowerBICard from "./PowerBICard";
 
 export default function PowerBISection({ dict }: { dict: any }) {
@@ -27,7 +26,7 @@ export default function PowerBISection({ dict }: { dict: any }) {
 
   return (
     <section
-      id="powerbi"
+      id="projects"
       className="relative w-full py-28 px-6 overflow-hidden bg-gradient-to-br from-[#081225] via-[#0d1a35] to-[#020617]"
     >
       {/* glow sutil */}

@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Phone } from "lucide-react";
 export default function Contact({ dict }: any) {
   return (
     <section
-      id="contato"
+      id="contact"
       className="bg-[#081225] text-white py-28 px-6"
     >
       <div className="max-w-5xl mx-auto">
