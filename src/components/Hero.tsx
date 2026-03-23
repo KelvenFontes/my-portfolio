@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa"
 import { BsDownload } from "react-icons/bs"
 
 
-export default function Hero({ dict }:any) {
+export default function Hero({ dict }: any) {
   return (
     <section className="min-h-screen flex items-center text-white bg-gradient-to-br from-[#081225] via-[#0d1a35] to-[#020617] px-6 pt-28 overflow-hidden">
 
@@ -33,25 +33,19 @@ export default function Hero({ dict }:any) {
             {dict.hero.description}
           </p>
 
-          {/* TECNOLOGIAS */}
-          <div className="flex justify-center gap-3 mt-6 flex-wrap">
+          {/* tecnologias */}
+          <div className="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+            <span className="max-w-[220px] bg-[#0d1a35] px-4 py-2 rounded-full text-xs md:text-sm border border-gray-700 text-center leading-tight break-words">
+              Business Intelligence
+            </span>
 
-            <span className="bg-[#0d1a35] px-4 py-1 rounded-full text-sm border border-gray-700">
+            <span className="max-w-[220px] bg-[#0d1a35] px-4 py-2 rounded-full text-xs md:text-sm border border-gray-700 text-center leading-tight break-words">
+              Process Automation
+            </span>
+
+            <span className="max-w-[220px] bg-[#0d1a35] px-4 py-2 rounded-full text-xs md:text-sm border border-gray-700 text-center leading-tight break-words">
               Python
             </span>
-
-            <span className="bg-[#0d1a35] px-4 py-1 rounded-full text-sm border border-gray-700">
-              SQL
-            </span>
-
-            <span className="bg-[#0d1a35] px-4 py-1 rounded-full text-sm border border-gray-700">
-              Power BI
-            </span>
-
-            <span className="bg-[#0d1a35] px-4 py-1 rounded-full text-sm border border-gray-700">
-              Data Visualization
-            </span>
-
           </div>
 
           {/* BOTÕES */}
