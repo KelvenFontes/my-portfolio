@@ -9,15 +9,16 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Meu Portfólio",
-  description: "Este é o meu portfólio",
+  title: "Kelven Fontes | Data Engineer & Data Scientist",
+  description:
+    "Portfólio com projetos de Data Engineering, Data Science, Power BI, Python e SQL.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
-          {children}
+        {children}
       </body>
     </html>
   );
