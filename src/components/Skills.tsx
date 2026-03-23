@@ -5,11 +5,12 @@ export default function Skills() {
   const skills = [
     { name: "Python", level: 90 },
     { name: "SQL", level: 92 },
-    { name: "Power BI", level: 88 },
-    { name: "Pandas / Data Analysis", level: 85 },
-    { name: "Machine Learning", level: 75 },
-    { name: "Data Visualization", level: 87 },
-  ]
+    { name: "Analytics & BI", level: 87 },
+    { name: "Cloud", level: 80 },
+    { name: "Data Lakes & Warehousing", level: 82 },
+    { name: "ETL / ELT Pipelines", level: 84 },
+    { name: "Machine Learning", level: 60 },
+  ];
 
   return (
     <section
@@ -34,14 +35,14 @@ export default function Skills() {
         </div>
 
         {/* SKILLS */}
-        <div className="space-y-12">
+        <div className="space-y-2">
 
           {skills.map((skill, index) => (
 
             <div key={index}>
 
               {/* NOME */}
-              <p className="text-gray-200 mb-4">
+              <p className="text-gray-200 mb-1">
                 {skill.name}
               </p>
 
