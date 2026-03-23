@@ -35,7 +35,7 @@ export default async function Home() {
 
       <Contact dict={dict}/>
 
-      <Footer />
+      <Footer dict={dict}/>
       <ScrollToTop />
     </>
   );

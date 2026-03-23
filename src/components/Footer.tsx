@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function Footer() {
+export default function Footer({ dict }: any) {
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Footer() {
     };
   }, []);
 
-  
+
   return (
     <motion.footer
       id="footer"
@@ -47,7 +47,7 @@ export default function Footer() {
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.4 }}
         className="text-lg font-medium text-white mb-6"
       >
-        Transformando dados em insights e decisões inteligentes!
+        {dict.footer.title}
       </motion.p>
 
       {/* Links Sociais com Hover Suave */}

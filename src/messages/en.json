@@ -47,5 +47,8 @@
     "phone": "Phone",
     "description": "I'm always open to new opportunities and connections. If you'd like to discuss a project, collaborate, or just say hello, feel free to reach out to me. I look forward to hearing from you!",
     "button": "Send Message"
+  },
+  "footer": {
+    "title": "Data, analytics, and insights that create real impact!"
   }
 }

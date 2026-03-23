@@ -47,5 +47,8 @@
     "phone": "Celular",
     "description": "Estou sempre aberto a novas oportunidades e conexões. Se você deseja discutir um projeto, colaborar ou simplesmente dizer olá, sinta-se à vontade para entrar em contato comigo. Estou ansioso para ouvir de você!",
     "button": "Enviar Mensagem"
+  },
+  "footer": {
+    "title": "Dados, análises e insights que criam impacto real!"
   }
 }
