@@ -1,26 +1,24 @@
 import { FaArrowUp } from "react-icons/fa"
 import { FaGraduationCap } from "react-icons/fa"
 
-export default function Resume() {
+export default function Resume({ dict }: { dict: any }) {
 
   const education = [
     {
-      title: "MBA in Technology for Business",
-      focus: "Artificial Intelligence, Data Science & Big Data",
+      title: dict.resume.education.title1,
+      focus: dict.resume.education.focus1,
       period: "2025 - 2026",
       place: "PUCRS – Pontifícia Universidade Católica do Rio Grande do Sul",
-      description:
-        "Postgraduate program focused on Artificial Intelligence, Data Science and Big Data applied to business. Emphasis on machine learning, predictive modeling and data-driven decision making.",
-      status: "In Progress"
+      description: dict.resume.education.description1,
+      status: dict.resume.education.status1
     },
     {
-      title: "Technologist Degree in Multiplatform Software Development",
-      focus: "Software Engineering & Data Foundations",
+      title: dict.resume.education.title2,
+      focus: dict.resume.education.focus2,
       period: "2022 - 2024",
       place: "FATEC Osasco – Prefeito Hirant Sanazar",
-      description:
-        "Degree focused on software engineering, algorithms, databases and statistics, building a strong technical foundation for data analysis and modern software development.",
-      status: "Completed"
+      description: dict.resume.education.description2,
+      status: dict.resume.education.status2
     }
   ]
 
@@ -36,11 +34,11 @@ export default function Resume() {
         <div className="text-center mb-20 relative">
 
           <h2 className="absolute inset-0 flex justify-center text-7xl font-bold text-white/[0.04] tracking-widest">
-            RESUME
+            {dict.resume.title}
           </h2>
 
           <p className="text-yellow-400 font-semibold tracking-widest relative">
-            RESUME
+            {dict.resume.subtitle}
           </p>
 
           <div className="w-16 h-[2px] bg-yellow-400 mx-auto mt-2"></div>
@@ -49,9 +47,9 @@ export default function Resume() {
 
 
         {/* TITLE */}
-        <h3 className="text-3xl font-bold mb-16 flex items-center gap-3">
+        {/* <h3 className="text-3xl font-bold mb-16 flex items-center gap-3">
           🎓 Education Journey
-        </h3>
+        </h3> */}
 
 
         {/* TIMELINE */}

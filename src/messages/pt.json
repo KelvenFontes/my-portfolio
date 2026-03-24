@@ -32,6 +32,20 @@
     "titleShort1": "Dashboard Uber – Análise de Corridas",
     "descriptionShort1": "Dashboard em Power BI com análise de corridas, receita e avaliações."
   },
+  "resume": {
+    "title": "EDUCATION",
+    "subtitle": "Education Journey",
+    "education": {
+      "title1": "MBA em Tecnologia para Negócios - FGV",
+      "description1": "Especialização em Inteligência Artificial, Data Science e Big Data.",
+      "focus1": "Inteligência Artificial, Data Science e Big Data",
+      "status1": "Em andamento",
+      "title2": "Tecnólogo em Desenvolvimento de Software Multiplataforma",
+      "description2": "Formação sólida em desenvolvimento de software e fundamentos de computação.",
+      "focus2": "Desenvolvimento de Software e Fundamentos de Computação",
+      "status2": "Concluído"
+    }
+  },
   "contact": {
     "title": "CONTATO",
     "subtitle": "ENTRE EM CONTATO",

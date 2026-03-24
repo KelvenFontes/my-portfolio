@@ -31,7 +31,7 @@ export default async function Home() {
 
       <TechCarousel />
 
-      <Resume />
+      <Resume dict={dict}/>
 
       <Contact dict={dict}/>
 

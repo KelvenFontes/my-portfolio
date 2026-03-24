@@ -32,6 +32,20 @@
     "titleShort1": "Uber Dashboard – Ride Analysis",
     "descriptionShort1": "Power BI dashboard with ride, revenue and rating analysis."
   },
+  "resume": {
+    "title": "EDUCATION",
+    "subtitle": "Education Journey",
+    "education": {
+      "title1": "MBA in Technology for Business: Data Science, AI and Big Data",
+      "description1": "Postgraduate program focused on Artificial Intelligence, Data Science and Big Data applied to business. Emphasis on machine learning, predictive modeling and data-driven decision making.",
+      "focus1": "Artificial Intelligence, Data Science and Big Data",
+      "status1": "In Progress",
+      "title2": "Bachelor's Degree in Multiplatform Software Development",
+      "description2": "Solid background in software development and computing fundamentals.",
+      "focus2": "Software Development and Computing Fundamentals",
+      "status2": "Completed"
+    }
+  },
   "contact": {
     "title": "CONTACT",
     "subtitle": "CONTACT ME",
