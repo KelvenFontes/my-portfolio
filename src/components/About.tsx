@@ -24,31 +24,21 @@ export default function About({ dict }: any) {
 
           {/* FOTO */}
           <div className="relative flex justify-center">
-
             {/* GLOW */}
-            <div className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[360px] bg-yellow-400/20 blur-[120px] rounded-full"></div>
+            <div className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[320px] bg-yellow-400/20 blur-[120px] rounded-full"></div>
 
-            {/* CARD ATRÁS (aparece só no desktop) */}
-            <div className="w-[280px] h-[280px] md:block absolute md:w-[380px] md:h-[420px] border border-white/10 rounded-xl -translate-x-4 translate-y-4"></div>
+            {/* CARD ATRÁS */}
+            <div className="absolute w-[280px] h-[280px] md:w-[380px] md:h-[380px] border border-white/10 rounded-2xl -translate-x-4 translate-y-4"></div>
 
-            <Image
-              src="/assets/aboutus.png"
-              alt="Kelven Fontes"
-              width={380}
-              height={420}
-              className="
-                relative
-                w-[260px] md:w-[380px]
-                h-auto
-                object-cover
-                rounded-xl
-                border border-white/10
-                shadow-2xl
-                hover:scale-105
-                transition duration-500
-              "
-            />
-
+            {/* CARD DA IMAGEM */}
+            <div className="relative w-[280px] h-[280px] md:w-[380px] md:h-[380px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+              <Image
+                src="/assets/aboutus.png"
+                alt="Kelven Fontes"
+                fill
+                className="object-cover hover:scale-105 transition duration-500"
+              />
+            </div>
           </div>
 
           {/* TEXTO */}
