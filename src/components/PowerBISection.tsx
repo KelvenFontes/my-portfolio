@@ -9,18 +9,6 @@ export default function PowerBISection({ dict }: { dict: any }) {
       description: dict.Dashboard.descriptionShort1,
       embedUrl:
         "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
-    },
-    {
-      title: dict.Dashboard.titleShort1,
-      description: dict.Dashboard.descriptionShort1,
-      embedUrl:
-        "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
-    },
-    {
-      title: dict.Dashboard.titleShort1,
-      description: dict.Dashboard.descriptionShort1,
-      embedUrl:
-        "https://app.powerbi.com/view?r=eyJrIjoiMjkwYzUyYjAtOTdkMy00NTgwLTlhMWUtN2M2MWZkOGM2Njk0IiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
     }
   ];
 
