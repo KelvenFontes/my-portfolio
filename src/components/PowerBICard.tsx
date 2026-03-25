@@ -22,7 +22,7 @@ export default function PowerBICard({
       <div className="relative rounded-2xl border border-yellow-400/20 bg-[#1b2942] p-5 shadow-md backdrop-blur-sm transition duration-300 hover:border-yellow-400/60 hover:shadow-[0_0_30px_rgba(250,204,21,0.15)]">
         <h3 className="text-xl font-semibold text-yellow-400 mb-2">{title}</h3>
 
-        <p className="text-zinc-300 mb-6">{description}</p>
+        <p className="text-zinc-300 mb-6 min-h-[50px]">{description}</p>
 
         <div className="relative w-full pb-[56.25%] mb-4 overflow-hidden rounded-lg">
           <iframe

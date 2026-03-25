@@ -14,7 +14,7 @@ export default function PowerBISection({ dict }: { dict: any }) {
       title: dict.Dashboard.titleShort2,
       description: dict.Dashboard.descriptionShort2,
       embedUrl:
-        "https://app.powerbi.com/view?r=eyJrIjoiMDJmYzYyYzEtNDUwZC00N2M4LWExMDEtOTQ2MGQwMmI5Y2UzIiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9",
+        "https://app.powerbi.com/view?r=eyJrIjoiMDJmYzYyYzEtNDUwZC00N2M4LWExMDEtOTQ2MGQwMmI5Y2UzIiwidCI6IjVlYjdlNmFiLWY5MzAtNDFiMC1hZTNjLTQ4Yzg2MjYxZGNhNCJ9&pageName=45232016c2c532501285",
     }
   ];
 
